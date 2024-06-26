@@ -4,7 +4,7 @@ import croix from "../../assets/fermer.png";
 
 function Nav({ setOpenBurger }) {
   return (
-    <nav className="flex-col openBurger justify-between">
+    <nav className="flex-col openBurger justify-between mobile">
       <button
         type="button"
         onClick={() => setOpenBurger(false)}

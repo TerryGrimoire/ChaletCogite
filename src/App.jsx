@@ -11,9 +11,8 @@ import "./App.css";
 
 function App() {
   const helmet = {
-    title: "Change Title",
-    href: "https://changehref.com",
-    description: "Change description",
+    title: "Le Chalet CoGîte",
+    href: "https://chaletcogite.re",
   };
   return (
     <BrowserRouter>

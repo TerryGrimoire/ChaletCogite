@@ -1,11 +1,44 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Image from "../components/Home/LandingPage/Image";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import video from "../assets/video.mp4";
+import gite2 from "../assets/gite2.jpg";
+import gite from "../assets/gite.jpg";
+import gite1 from "../assets/gite1.jpg";
+import gite3 from "../assets/gite3.jpg";
+import gite4 from "../assets/gite4.jpg";
+import gite5 from "../assets/gite5.jpg";
+import gite6 from "../assets/gite6.jpg";
+import gite7 from "../assets/gite7.jpg";
+import gite8 from "../assets/gite8.jpg";
+import gite9 from "../assets/gite9.jpg";
+import gite10 from "../assets/gite10.jpg";
+import gite11 from "../assets/gite11.jpg";
+import propositions from "../data/propositions";
 
 export default function Home({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const handleDragStart = (e) => e.preventDefault();
+
+  const items = [
+    <img src={gite} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite2} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite3} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite4} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite5} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite6} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite7} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite8} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite9} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite10} onDragStart={handleDragStart} alt="presentation" />,
+    <img src={gite11} onDragStart={handleDragStart} alt="presentation" />,
+  ];
+
   return (
     <main className="flex-col">
       <Helmet>
@@ -13,37 +46,77 @@ export default function Home({ helmet }) {
         <link rel="canonical" href={helmet.href} />
         <meta name="description" content={helmet.description} />
       </Helmet>
+      <section className="home_top">
+        <video autoPlay loop muted>
+          <track kind="captions" />
+          <source src={video} type="video/mp4" />
+        </video>
+        <div className="veil" />
+        <article>
+          <h1>Le Chalet CoGîte</h1>
+          <h2> Le gîte écologique en agroforesterie du Dimitile</h2>
+          <div className="buttons_container">
+            <Link to="/Carte">
+              <button className="button_style" type="button">
+                Découvrir notre histoire
+              </button>
+            </Link>
+            <Link to="/Contact">
+              <button className="button_style but2" type="button">
+                Découvrir nos formules
+              </button>
+            </Link>
+          </div>
+        </article>
+      </section>
+      <section className="home_gite white">
+        <div>
+          <article>
+            <h3>Notre concept </h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              debitis quia aliquam? Nemo doloremque beatae modi perferendis
+              quidem. Dolorum, quas. Iusto maxime sit debitis facilis, officiis
+              dolores, corrupti repellendus aliquid dolor optio illum sequi?
+              Maxime maiores cum suscipit voluptate nesciunt et temporibus iure
+              incidunt iste. Explicabo maxime sit quis vero!
+            </p>
+            <button type="button" className="button_style">
+              Découvrir notre histoire
+            </button>
+          </article>
 
-      {/*
+          <img src={gite1} alt="" className="gite2" />
+        </div>
+      </section>
 
-        Options here :
-        -  Main image Style - Landing page like Charles Portefolio (main image + title in the middle) 
-        -  Main video Style - Landing page like Barber 902 (main vidéo + title in the middle)
-        -  Animation  Style - Landing page like ASMK (main image animated + title in the middle)
- 
-        */}
-
-      <Image title={helmet.title} />
-      <section className="section2">
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus
-          aliquid vel blanditiis. Iste earum tempore, corrupti distinctio nam
-          dignissimos incidunt eveniet in tempora libero! Possimus explicabo
-          architecto aut dolorem blanditiis magni porro maiores dignissimos
-          repellat rem voluptatum, magnam provident at illum atque fugit
-          assumenda eaque minima iste. Quaerat odit suscipit possimus nostrum,
-          libero odio est quo culpa tempore ex tenetur sed esse unde doloremque
-          ea minus rerum laboriosam eveniet labore ipsam voluptate officiis
-          fugiat. Natus minima voluptatem hic eum ad perferendis rerum animi,
-          provident aliquid quisquam, mollitia eaque enim eligendi consequatur
-          nihil eveniet ex corrupti delectus quidem consequuntur! Saepe
-          repudiandae excepturi ut atque dolorum quisquam voluptas laudantium
-          sapiente, obcaecati voluptatibus earum adipisci dolor maiores beatae
-          delectus ab pariatur! Fuga voluptatibus soluta quidem alias suscipit
-          animi, nisi dolorum adipisci veritatis veniam amet aut odio magni,
-          nihil nobis fugit iste expedita ut nulla quas consequuntur debitis?
-          Nihil ipsam dicta saepe temporibus molestiae!
-        </p>
+      <section className="home_banniere">
+        {propositions.map((el) => (
+          <div>
+            <img src={el.image} alt={el.titre} /> <h5>{el.titre}</h5>{" "}
+            <p>{el.texte}</p>
+          </div>
+        ))}
+      </section>
+      <section className="white home_first_carousel">
+        <h3>Découvrez notre gîte</h3>
+        <div>
+          <AliceCarousel
+            mouseTracking
+            disableDotsControls
+            items={items}
+            infinite
+            responsive={{
+              0: {
+                items: 1,
+              },
+              1024: {
+                items: 3,
+                itemsFit: "contain",
+              },
+            }}
+          />
+        </div>
       </section>
     </main>
   );
