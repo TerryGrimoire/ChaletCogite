@@ -171,6 +171,89 @@ h3 {
   padding: 20px 0;
   font-size: 4rem;
 }
+/********************************************************************* FOOTER ALL *********************************************************************/ 
+.all_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all_footer section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all_footer section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all_footer section div:last-child {
+  flex-direction: column;
+  margin: 30px 0 0;
+  width: 100%;
+}
+
+.all_footer img {
+  margin: 10px;
+}
+
+.all_footer .main_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.all_footer .main_footer > * {
+  width: 50%;
+  flex-direction: column;
+}
+
+.all_footer .main_footer > div > div {
+  width: 50%;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.all_footer .main_footer > div:last-of-type {
+  align-items: flex-end;
+  padding-right: 40px;
+}
+
+.all_footer .main_footer > div:last-of-type div {
+  justify-content: flex-end;
+}
+.all_footer .main_footer > div:last-of-type p {
+  text-align: right;
+}
+.all_footer h5 {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.all_footer p {
+  width: 40%;
+  text-align: center;
+}
+
+.all_footer a {
+  color: var(--third-color);
+}
+
+.all_footer img {
+  height: 60px;
+
+}
+
+.all_footer .social img {
+  width: 2rem;
+  background-color: transparent;
+  height: auto;
+}
 /********************************************************************* HOME *********************************************************************/ 
 .home_top {
   display: flex;
