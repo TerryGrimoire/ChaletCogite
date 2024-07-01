@@ -101,7 +101,7 @@ section {
 .button_style {
   border: none;
   padding: 1rem;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   margin-right: 20px;
   box-shadow: none;
   background-color: var(--secondary-bg-color);
@@ -334,4 +334,137 @@ max-width: 80vh;
   height: 60vh;
   object-fit: cover;
   overflow: hidden;
+}
+
+.home_formules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_formules > p {
+  width: 35%;
+  text-align: center;
+}
+.home_formules section {
+  display: flex;
+
+  justify-content: center;
+  align-items: stretch;
+}
+
+.home_formules h4 {
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  max-width: 70%;
+}
+.home_formules div {
+  width: 30vw;
+  height: 30vw !important;
+  height: auto;
+  margin: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home_formules div * {
+  z-index: 2;
+  background-color: transparent;
+  overflow: hidden;
+  text-align: center;
+}
+
+.home_formules div img {
+  width: 100%;
+  opacity: 40%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home_formules div button {
+  background-color: var(--main-bg-color);
+  border: none;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  cursor: pointer;
+}
+
+.home_aussi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+
+.home_aussi section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_aussi section div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 0px 15vw;
+}
+
+.home_aussi section div:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.home_aussi section div article {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  background-color: var(--main-bg-color);
+  color: white ;
+}
+
+.home_aussi article * {
+  color: white;
+}
+
+.home_aussi section div img {
+  width: 50%;
+}
+
+.home_aussi h4 {
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home_aussi a {
+  margin-top: 15px;
+  font-size: 0.85rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+ a:hover {
+  color: var(--third-color) !important;
+}
+
+.button_style:hover {
+  color: var(--third-color);
 }

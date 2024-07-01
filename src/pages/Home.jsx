@@ -16,7 +16,10 @@ import gite8 from "../assets/gite8.jpg";
 import gite9 from "../assets/gite9.jpg";
 import gite10 from "../assets/gite10.jpg";
 import gite11 from "../assets/gite11.jpg";
+import pied from "../assets/pied.jpg";
+import main from "../assets/main.jpg";
 import propositions from "../data/propositions";
+import aussi from "../data/aussi";
 
 export default function Home({ helmet }) {
   useEffect(() => {
@@ -117,6 +120,67 @@ export default function Home({ helmet }) {
             }}
           />
         </div>
+      </section>
+      <section className="home_formules">
+        <h3>Nos formules</h3>
+        <p>
+          Le cogîte propose à tous nos visiteurs deux formules en fonction de
+          leurs besoins et leurs attentes. Bien plus qu'un gîte, nous avons à
+          coeur de créer du lien et partager des moments avec nos visiteurs.{" "}
+        </p>
+        <section>
+          <div>
+            <h4>Formule pied sous la table</h4>
+            <img src={pied} alt="personne qui se fait servir" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              facere quod ad alias quasi distinctio dignissimos, totam
+              aspernatur error accusamus maxime blanditiis quas, quam sed ea
+              nulla rerum velit nesciunt?
+            </p>
+            <Link to="/Formules">
+              {" "}
+              <button type="button" className="button_style">
+                Découvrir cette formule
+              </button>
+            </Link>
+          </div>
+
+          <div>
+            <h4>Formule donne la main</h4>
+            <img
+              src={main}
+              alt="personne qui cuisine avec d'autres gens qui aident derrière"
+            />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              facere quod ad alias quasi distinctio dignissimos, totam
+              aspernatur error accusamus maxime blanditiis quas, quam sed ea
+              nulla rerum velit nesciunt?
+            </p>
+            <Link to="/Formules">
+              {" "}
+              <button type="button" className="button_style">
+                Découvrir cette formule
+              </button>
+            </Link>
+          </div>
+        </section>
+      </section>
+      <section className="home_aussi white">
+        <h3>Le gîte c'est aussi</h3>
+        <section>
+          {aussi.map((el) => (
+            <div>
+              <img src={el.image} alt={el.titre} />
+              <article>
+                <h4>{el.titre}</h4>
+                <p>{el.texte}</p>
+                <Link to={el.link}>En savoir plus</Link>
+              </article>
+            </div>
+          ))}
+        </section>
       </section>
     </main>
   );
