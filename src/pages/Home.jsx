@@ -18,6 +18,7 @@ import gite10 from "../assets/gite10.jpg";
 import gite11 from "../assets/gite11.jpg";
 import pied from "../assets/pied.jpg";
 import main from "../assets/main.jpg";
+import droite from "../assets/droite.png";
 import propositions from "../data/propositions";
 import aussi from "../data/aussi";
 
@@ -109,6 +110,20 @@ export default function Home({ helmet }) {
             disableDotsControls
             items={items}
             infinite
+            renderPrevButton={() => {
+              return (
+                <img
+                  src={droite}
+                  alt="chevron gauche"
+                  className="chevron gauche"
+                />
+              );
+            }}
+            renderNextButton={() => {
+              return (
+                <img src={droite} alt="chevron droite" className="chevron" />
+              );
+            }}
             responsive={{
               0: {
                 items: 1,
@@ -181,6 +196,21 @@ export default function Home({ helmet }) {
             </div>
           ))}
         </section>
+      </section>
+      <section className="home_trouver white">
+        <h3>Nous trouver</h3>
+        <p>
+          Le chalet Cogite se trouve en terre de marronage, en plein coeur de
+          l'empire marron.
+        </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.9893449491847!2d55.505811099999995!3d-21.1899921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21787500604c5a2b%3A0x43e20c61844bef73!2sLe%20Chalet%20CoGite!5e1!3m2!1sfr!2sfr!4v1720087504866!5m2!1sfr!2sfr"
+          title="coigte"
+          allowFullScreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        />
       </section>
     </main>
   );

@@ -357,7 +357,6 @@ max-width: 80vh;
 .home_gite p {
   margin: 15px 0 10px;
 }
-
 .home_banniere {
   display: flex;
   justify-content: center;
@@ -419,6 +418,17 @@ max-width: 80vh;
   overflow: hidden;
 }
 
+.chevron {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.chevron.gauche {
+  transform: rotate(-180deg);
+}
 .home_formules {
   display: flex;
   flex-direction: column;
@@ -550,4 +560,24 @@ max-width: 80vh;
 
 .button_style:hover {
   color: var(--third-color);
+}
+
+.home_trouver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+}
+.home_trouver > p {
+width: 25%;
+text-align: center;
+}
+
+.home_trouver iframe {
+  width: 100%;
+  min-height: 70vh;
+  margin-top: 40px;
 }
