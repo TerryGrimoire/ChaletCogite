@@ -141,7 +141,9 @@ export default function Home({ helmet }) {
         <p>
           Le cogîte propose à tous nos visiteurs deux formules en fonction de
           leurs besoins et leurs attentes. Bien plus qu'un gîte, nous avons à
-          coeur de créer du lien et partager des moments avec nos visiteurs.{" "}
+          coeur de créer du lien et partager des moments avec nos visiteurs. A
+          noter, il est possible de venir au gîte juste pour dormir, sans
+          inclure une formule repas.
         </p>
         <section>
           <div>
