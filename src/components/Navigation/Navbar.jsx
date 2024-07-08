@@ -8,11 +8,11 @@ function Navbar() {
       <Link to="/">
         <img src={logo} alt="logo du Chalet CoGite" className="logo" />
       </Link>
-      <Link to="/Services">Le Chalet</Link>
-      <Link to="/Tarifs">formules</Link>
-      <Link to="/Tarifs">Activités</Link>
-      <Link to="/Tarifs">Boutique</Link>
-      <Link to="/Tarifs">Restauration</Link>
+      <Link to="/Chalet">Le Chalet</Link>
+      <Link to="/Formules">formules</Link>
+      <Link to="/Activites">Activités</Link>
+      <Link to="/Boutique">Boutique</Link>
+      <Link to="/Restauration">Restauration</Link>
       <Link to="/Contact">Contact</Link>
     </nav>
   );
