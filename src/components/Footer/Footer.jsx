@@ -16,13 +16,23 @@ function Footer() {
   const handleDragStart = (e) => e.preventDefault();
 
   const items = avis.map((el) => (
-    <div onDragStart={handleDragStart} className="avisGoogle">
+    <article onDragStart={handleDragStart} className="avisGoogle">
       <h5>{el.nom}</h5>
       <p>{el.com.substring(0, 125)}...</p>
       <img src={google} alt="logo Google" />
       <img src={evaluation} alt="cinq étoiles notation" />
-    </div>
+    </article>
   ));
+
+  const responsive = {
+    0: {
+      items: 1,
+    },
+    1024: {
+      items: 4,
+      itemsFit: "contain",
+    },
+  };
   return (
     <footer className="all_footer">
       <div className="footer_avis">
@@ -30,19 +40,10 @@ function Footer() {
         <AliceCarousel
           disableDotsControls
           disableButtonsControls
-          items={items}
           infinite
+          items={items}
           mouseTracking
-          responsive={{
-            0: {
-              items: 1,
-              itemsFit: "contain",
-            },
-            904: {
-              items: 4,
-              itemsFit: "contain",
-            },
-          }}
+          responsive={responsive}
         />
       </div>
       <section>
