@@ -1,15 +1,50 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
+import avis from "../../data/avisGoogle";
 import facebook from "../../assets/facebook.svg";
 import instagram from "../../assets/instagram.svg";
 import youtube from "../../assets/youtube.svg";
 import region from "../../assets/region.png";
 import ue from "../../assets/ue.png";
+import evaluation from "../../assets/evaluation.png";
+import google from "../../assets/google.png";
 
 function Footer() {
+  const handleDragStart = (e) => e.preventDefault();
+
+  const items = avis.map((el) => (
+    <div onDragStart={handleDragStart} className="avisGoogle">
+      <h5>{el.nom}</h5>
+      <p>{el.com.substring(0, 125)}...</p>
+      <img src={google} alt="logo Google" />
+      <img src={evaluation} alt="cinq étoiles notation" />
+    </div>
+  ));
   return (
     <footer className="all_footer">
+      <div className="footer_avis">
+        <h3>Nos clients témoignent</h3>
+        <AliceCarousel
+          disableDotsControls
+          disableButtonsControls
+          items={items}
+          infinite
+          mouseTracking
+          responsive={{
+            0: {
+              items: 1,
+              itemsFit: "contain",
+            },
+            904: {
+              items: 4,
+              itemsFit: "contain",
+            },
+          }}
+        />
+      </div>
       <section>
         <div className="main_footer">
           <div>
