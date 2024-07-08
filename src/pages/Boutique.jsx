@@ -33,6 +33,7 @@ function Boutique({ helmet }) {
       .then((text) => papa.parse(text))
       .then((data2) => prepareData(data2.data));
   }, []);
+
   return (
     <div>
       <Helmet>
@@ -66,16 +67,18 @@ function Boutique({ helmet }) {
                 ))}
           </div>
         </section>
-        <section className="boutique_article_main_container">
-          <h3>Découvre notre boutique</h3>
+        <section className="boutique_article_main_container white">
+          <h3>Tout savoir sur la boutique du cogîte</h3>
           <div className="boutique_article_container">
             {boutique
-              .filter((element) => element.prix !== "prix")
+              .filter(
+                (element) => element.prix !== "prix" && element.texte !== ""
+              )
               .map((el) => (
                 <div>
                   <img src={el.image} alt={el.titre} />
                   <article>
-                    <h4>{el.titre}</h4>
+                    <h4>{el.titre.toUpperCase()}</h4>
                     <p>{el.texte}</p>
                   </article>
                 </div>
