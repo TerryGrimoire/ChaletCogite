@@ -277,6 +277,9 @@ h3 {
   width: 100%;
   padding: 0;
 }
+.all_footer .footer_avis h5 {
+  font-weight: bolder;
+}
 
 .all_footer .footer_avis .avisGoogle {
   background-color: beige;
