@@ -1,9 +1,15 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-import logo from "../assets/logo2.png";
+import logo from "../assets/logo.png";
 import chalet from "../assets/chalet1.jpg";
 import gite from "../assets/gite.jpg";
 import gite2 from "../assets/gite9.jpg";
+import gite3 from "../assets/gite8.jpg";
+import heure from "../assets/lhorloge.svg";
+import euro from "../assets/carte.svg";
+import infos from "../assets/lune.svg";
+import animal from "../assets/patte.svg";
+import pol from "../assets/pol.svg";
 
 function Chalet({ helmet }) {
   useEffect(() => {
@@ -66,15 +72,31 @@ function Chalet({ helmet }) {
           </article>
         </section>
         <section className="chalet_regles white">
-          <h3>Plus d'informations sur le chalet</h3>
+          <h3>Infos pratiques</h3>
           <div className="regles">
-            <img src={chalet} alt="" />
-            <div>
+            <img src={gite3} alt="" />
+            <div className="regles_container">
               <ul>
-                <li>Pas d'animaux dans le chalet</li>
-                <li>Moyens de paiement acceptés : Espèces et chèques</li>
-                <li>Arrivée 15h départ 11h</li>
-                <li>Pas d'animaux dans le chalet</li>
+                <li>
+                  <img src={heure} alt="" />
+                  <p>Arrivée et départ : arrivée 15h et départ 11h</p>
+                </li>
+                <li>
+                  <img src={infos} alt="" />
+                  <p>Prix : À partir de 60€ la nuit</p>
+                </li>
+
+                <li>
+                  <img src={euro} alt="" />
+                  <p>Paiement acceptés : Espèces, virements et chèques</p>
+                </li>
+                <li>
+                  <img src={animal} alt="" />
+                  <p> Les animaux ne sont pas acceptés</p>
+                </li>
+                <a href="/">
+                  <img src={pol} alt="" /> Découvrir les règles du chalet
+                </a>
               </ul>
             </div>
           </div>

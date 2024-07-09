@@ -60,12 +60,12 @@ export default function Home({ helmet }) {
           <h1>Le Chalet CoGîte</h1>
           <h2> Le gîte écologique en agroforesterie du Dimitile</h2>
           <div className="buttons_container">
-            <Link to="/Carte">
+            <Link to="/Chalet">
               <button className="button_style" type="button">
                 Découvrir notre histoire
               </button>
             </Link>
-            <Link to="/Contact">
+            <Link to="/Formules">
               <button className="button_style but2" type="button">
                 Découvrir nos formules
               </button>
@@ -85,9 +85,11 @@ export default function Home({ helmet }) {
               Maxime maiores cum suscipit voluptate nesciunt et temporibus iure
               incidunt iste. Explicabo maxime sit quis vero!
             </p>
-            <button type="button" className="button_style">
-              Découvrir notre histoire
-            </button>
+            <Link to="/Chalet">
+              <button type="button" className="button_style">
+                Découvrir notre histoire
+              </button>
+            </Link>
           </article>
 
           <img src={gite1} alt="" className="gite2" />

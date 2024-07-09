@@ -112,7 +112,7 @@ section {
   margin-top: 20px;
   padding: 13px 20px;
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .margin1r0 {
@@ -163,10 +163,8 @@ header {
   font-size: 1.25rem;
 }
 .logo {
-  background-color: white !important;
-  height: 4rem;
+  height: 5rem;
   object-fit: cover;
-  border-radius: 50%;
   background-color: transparent;
 }
 h3 {
@@ -603,6 +601,7 @@ max-width: 80vh;
 
 .button_style:hover {
   color: var(--third-color);
+  cursor: pointer;
 }
 
 .home_trouver {
@@ -683,13 +682,16 @@ text-align: center;
 }
 .chalet_page_top {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding: 20px 15vw;
+  padding: 20px 10vw;
+  background: linear-gradient(90deg, beige 50%, white);
 }
 
 .chalet_page_top * {
   background-color: transparent;
+  text-align: left;
+  color: var(--secondary-bg-color);
 }
 
 .chalet_page_top > img {
@@ -702,8 +704,8 @@ text-align: center;
 }
 
 .chalet_page_top article {
-  padding: 20px 100px 20px 0;
-  width: 70%;
+  padding: 20px 10px 20px 0;
+  width: 60%;
 }
 .chalet_page_top article p {
   padding: 10px;
@@ -752,11 +754,54 @@ text-align: center;
   display: flex;
   justify-content: left;
   align-items: flex-start;
-  margin-top: 10px;
+  margin: 10px 0 60px;
 }
 .chalet_middle_bottom > * {
   width: 50%;
   padding: 10px 5px 0 0;
+}
+
+.chalet_regles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chalet_regles .regles {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  padding: 40px 15vw;
+}
+
+.regles img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.regles div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 55px, rgba(0, 0, 0, 0.12) 0px -2px 5px, rgba(0, 0, 0, 0.12) 0px 4px 3px, rgba(0, 0, 0, 0.17) 0px 1px 3px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.regles div li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.regles_container img {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 10px;
+  object-fit: contain;
 }
 
 /********************************************************************* BOUTIQUE *********************************************************************/ 
@@ -849,6 +894,7 @@ ________
   justify-content: center;
   align-items: stretch;
   margin-top: 0px;
+  margin-bottom: 40px;
 }
 
 .boutique_article_container div:nth-of-type(2n) {
@@ -867,13 +913,10 @@ ________
   align-items: flex-end;
   text-align: right;
   padding: 40px;
-  background-color: var(--main-bg-color);
-  color: white;
 }
 
 .boutique_article_container div article * {
   background-color: transparent;
-  color: white;
 }
 
 .boutique_article_container div:nth-of-type(2n) article {
@@ -888,7 +931,9 @@ ________
 .boutique_article_container div article h4 {
   font-family: var(--font-title);
   font-size: 3rem;
+  font-weight: bold;
   padding: 10px 0;
+  color: var(--main-bg-color);
 }
 /********************************************************************* ACTIVITES *********************************************************************/ 
 
