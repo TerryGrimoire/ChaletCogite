@@ -28,7 +28,7 @@ function Restauration({ helmet }) {
   };
   useEffect(() => {
     window.scrollTo(0, 0);
-    fetch(import.meta.env.VITE_BOUTIQUE)
+    fetch(import.meta.env.VITE_RESTAURATION)
       .then((result) => result.text())
       .then((text) => papa.parse(text))
       .then((data2) => prepareData(data2.data));
