@@ -176,7 +176,6 @@ export default function Home({ helmet }) {
               nulla rerum velit nesciunt?
             </p>
             <Link to="/Formules">
-              {" "}
               <button type="button" className="button_style">
                 Découvrir cette formule
               </button>
