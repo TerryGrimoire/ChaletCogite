@@ -756,3 +756,57 @@ ________
   font-size: 3rem;
   padding: 10px 0;
 }
+
+/********************************************************************* CONTACT *********************************************************************/ 
+
+.contact_page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_page h3 {
+  text-align: center;
+}
+
+.contact_page section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_page .contact_infos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 40px 15vw;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.contact_infos > * {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.contact_infos ul {
+  padding: 40px 60px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.contact_infos li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+.contact_infos li img {
+  width: 1.5em;
+  height: 1.5rem;
+  object-fit: contain;
+  margin-right: 15px;
+}
