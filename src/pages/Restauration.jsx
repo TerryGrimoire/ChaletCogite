@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
 
+import vague from "../assets/separateur.svg";
+
 function Restauration({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [boutique, setBoutique] = useState([]);
+  const [restauration, setRestauration] = useState([]);
   const prepareData = (data2) => {
     // j correspond aux lignes de A à ZZZ sur fichier Excel
     // index
@@ -24,7 +26,7 @@ function Restauration({ helmet }) {
     });
 
     json.shift();
-    setBoutique(json);
+    setRestauration(json);
   };
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,6 +35,7 @@ function Restauration({ helmet }) {
       .then((text) => papa.parse(text))
       .then((data2) => prepareData(data2.data));
   }, []);
+
   return (
     <div>
       <Helmet>
@@ -42,26 +45,41 @@ function Restauration({ helmet }) {
       </Helmet>
       <main className="all_main">
         <section className="boutique_produits_section white">
-          <h3>Découvrez le menu de la semaine</h3>
+          <h3>Découvrez le menu </h3>
           <p>
             Nos menus varient en fonction des saisons et des différentes
             récoltes de la semaine.
           </p>
+
           <div className="boutique_produits_container">
-            {boutique &&
-              boutique.length > 1 &&
-              boutique
-                .filter((element) => element.prix !== "prix")
+            {restauration &&
+              restauration.length > 0 &&
+              restauration[0] &&
+              restauration[0].semaine &&
+              restauration
+                .filter(
+                  (element) =>
+                    element.semaine !== "semaine" && element.semaine !== ""
+                )
                 .map((el) => (
-                  <div className="boutique_produit">
-                    <img src={el.photo} alt={el.produit} />
-                    <h5>{el.produit.toUpperCase()}</h5>
-                    <p>{el.prix} €</p>
-                    <small
-                      className={el.stock.includes("stock") ? "blue" : "marron"}
-                    >
-                      {el.stock}
-                    </small>
+                  <div className="restaurant_menu_container">
+                    {el.semaine &&
+                      el.semaine.split(";").map((elou) => (
+                        <div className="menu">
+                          <h5>{elou.split(":")[0]}</h5>
+                          <p className="restaurant_menu_eloument">
+                            {elou
+                              .split(":")[1]
+                              .split(",")
+                              .map((eloument) => (
+                                <ul>
+                                  <p>{eloument}</p>{" "}
+                                  <img src={vague} alt="separateur" />{" "}
+                                </ul>
+                              ))}
+                          </p>
+                        </div>
+                      ))}
                   </div>
                 ))}
           </div>
@@ -69,9 +87,9 @@ function Restauration({ helmet }) {
         <section className="boutique_article_main_container white">
           <h3>Manger bien, manger sain</h3>
           <div className="boutique_article_container">
-            {boutique
+            {restauration
               .filter(
-                (element) => element.prix !== "prix" && element.texte !== ""
+                (element) => element.titre !== "titre" && element.texte !== ""
               )
               .map((el) => (
                 <div>
