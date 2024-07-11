@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Chalet from "./pages/Chalet";
 import Activites from "./pages/Activites";
 import Formules from "./pages/Formules";
+import Formule from "./pages/Formule";
 import Restauration from "./pages/Restauration";
 import Boutique from "./pages/Boutique";
 import Contact from "./pages/Contact";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Home helmet={helmet} />} />
         <Route path="/Chalet" element={<Chalet helmet={helmet} />} />
         <Route path="/Formules" element={<Formules helmet={helmet} />} />
+        <Route path="/Formules/:id" element={<Formule helmet={helmet} />} />
         <Route path="/Activites" element={<Activites helmet={helmet} />} />
         <Route path="/Boutique" element={<Boutique helmet={helmet} />} />
         <Route

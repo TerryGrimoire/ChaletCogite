@@ -31,7 +31,7 @@ function Hero({ number }) {
   }, []);
 
   return (
-    <div>
+    <div className="hero_container">
       {hero && hero.length > 1 && (
         <div className="hero">
           <img src={hero[number].photo} alt={hero[number].titre} />

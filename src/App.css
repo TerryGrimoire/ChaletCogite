@@ -155,6 +155,7 @@ header {
   position: absolute;
   top: 0;
   z-index: 2;
+  overflow: visible;
 }
 
 .navbar > * {
@@ -167,26 +168,48 @@ header {
   z-index: 2;
 }
 
+.navbar a {
+  overflow: visible;
+}
+
 .logo {
-  height: 5rem;
+  height: 6rem;
   object-fit: cover;
   background-color: transparent;
-  background-color: #fff;
-  border-radius: 50%;
   margin-top: 5px;
+  animation: logo 4s ease-in-out;
+  transition: all ease-in-out 1s;
 }
+
+.logo:hover {
+  transform: scale(1.5);
+}
+@keyframes logo {
+  from {
+    transform: scale(2);
+  }
+  to {
+   transform: scale(1);
+  }
+}
+
 
 h3 {
   font-family: var(--font-title);
   padding: 20px 0;
   font-size: 4rem;
 }
-
+.hero_container {
+  overflow: hidden;
+  min-height: 65vh;
+  background-color: white;
+  transition: all ease-in-out 2s;
+}
 .hero {
   position: relative;
   height: 65vh;
-  overflow: hidden;
   object-fit: cover;
+  transition: ease-in-out all 1s;
 }
 
 .hero img {
@@ -546,7 +569,7 @@ max-width: 80vh;
   flex-direction: column;
   justify-content: center;
   align-items:  center;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 0.3rem;
   position: relative;
   overflow: hidden;
@@ -682,6 +705,7 @@ text-align: center;
   align-items: center;
   justify-content: center;
   margin: 10px;
+  border-radius: 0.25rem;
   background-image: url(../src/assets/background.jpg);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 10px, rgba(0, 0, 0, 0.12) 0px -2px 5px, rgba(0, 0, 0, 0.12) 0px 4px 3px, rgba(0, 0, 0, 0.17) 0px 1px 3px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -828,7 +852,7 @@ text-align: center;
   align-items: center;
   padding: 40px;
   min-height: 50vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 55px, rgba(0, 0, 0, 0.12) 0px -2px 5px, rgba(0, 0, 0, 0.12) 0px 4px 3px, rgba(0, 0, 0, 0.17) 0px 1px 3px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: var(--box-shadow);
 
 }
 .regles div li {
@@ -1102,7 +1126,7 @@ ________
   align-items: stretch;
   margin: 40px 15vw;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 20px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: var(--box-shadow);
 }
 
 .contact_infos > * {
@@ -1127,4 +1151,215 @@ ________
   height: 1.5rem;
   object-fit: contain;
   margin-right: 15px;
+}
+
+/********************************************************************* FORMULES PAGE *********************************************************************/ 
+.formules_main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formules_main_container h3 {
+  text-align: center;
+}
+
+.formules_main_container > p {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 60px;
+}
+.formules_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw;
+  padding: 20px 15vw;;
+}
+
+.formules_container > a {
+  overflow: hidden;
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+  margin: 20px;
+  transition:  0.5s ease-in-out all;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25rem;
+}
+
+.formules_container > a:hover {
+transform: scale(1.05);
+}
+
+.formules_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.formules_container .formules_tarifs {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  z-index: 3 !important;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formules_tarifs h5 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color:white;
+}
+.formules_tarifs p {
+  font-size: 1rem;
+  font-style: italic;
+  color: wheat;
+}
+
+/********************************************************************* FORMULE BY ID PAGE *********************************************************************/ 
+
+
+.formulebyId_main_container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.formulebyId_main_container .hero_container {
+  width: 100%;
+  overflow: visible;
+}
+
+
+.formulebyId_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10vw;
+}
+
+.formulebyId_container h3 {
+  text-align: left;
+  width: 100%;
+}
+
+.formulebyId_container h3 span {
+  text-align: left;
+  color: var(--main-bg-color);
+  font-size: 4rem;
+  font-family: var(--font-title);
+  font-weight: bold;
+
+}
+
+.formulebyId_carousel_container {
+  display: flex;
+  overflow: visible;
+  margin-top: 60px;
+}
+
+.formulebyId_carousel_container  * {
+  overflow: visible;
+}
+
+.carousel_img_container img  {
+  border: solid 3px yellow;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.duo_formulebyId {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 100px;
+  padding: 40px 0;
+}
+
+.duo_formulebyId > * {
+  width: 50%;
+  box-shadow: var(--box-shadow);
+}
+
+.duo_formulebyId > img {
+  height: auto;
+  object-fit: cover;
+}
+
+.details_formulebyId {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px 0;
+  max-height: 80vh;
+
+}
+.details_formulebyId > div  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20vw;
+  margin: 20px 0;
+}
+.details_formulebyId > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details_formulebyId h5 {
+ font-family: var(--font-title);
+ font-weight: bold;
+ font-size: 1.2rem;
+}
+
+.details_formulebyId img {
+  height: 1rem;
+  width: 30px;
+  object-fit: contain;
+}
+
+.details_formulebyId ul {
+  margin-top: 5px;
+  padding: 0 10px;
+}
+
+.details_formulebyId ul li {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.formulebyId_tarifs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.formulebyId_tarifs h4 {
+  font-family: var(--font-title);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
