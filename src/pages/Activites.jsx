@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import Hero from "../components/Hero";
 
+import euro from "../assets/euro.png";
+
 function Activites({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,14 +58,17 @@ function Activites({ helmet }) {
                 )
                 .map((el) => (
                   <Link to="/Contact" className="agenda">
-                    <img src={el.affiche} alt={el.evenement} />
+                    <img src={el.affiche} alt="" />
                     <ul>
                       <li>
-                        <h5>{el.evenement}</h5> <p>{el.date}</p>
+                        <h5>{el.evenement}</h5>{" "}
+                        <p className="date">{el.date}</p>{" "}
+                        <div className="prix">
+                          <p>{el.prix}</p>
+                          <img src={euro} alt="euro" />
+                        </div>
                       </li>
-                      <li className="prix">
-                        <p>{el.prix}</p>
-                      </li>
+
                       <li className="details">
                         {el.details &&
                           el.details.length > 0 &&

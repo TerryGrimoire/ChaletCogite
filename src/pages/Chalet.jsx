@@ -86,12 +86,12 @@ function Chalet({ helmet }) {
                 </li>
                 <li>
                   <img src={infos} alt="" />
-                  <p>Prix : À partir de 60€ la nuit</p>
+                  <p>Prix : à partir de 60€ la nuit</p>
                 </li>
 
                 <li>
                   <img src={euro} alt="" />
-                  <p>Paiement acceptés : Espèces, virements et chèques</p>
+                  <p>Paiements acceptés : espèces, virements et chèques</p>
                 </li>
                 <li>
                   <img src={animal} alt="" />
