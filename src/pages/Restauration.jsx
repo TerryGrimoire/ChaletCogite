@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
 
+import Hero from "../components/Hero";
+
 import vague from "../assets/separateur.svg";
 
 function Restauration({ helmet }) {
@@ -44,6 +46,7 @@ function Restauration({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
+        <Hero number={4} />
         <section className="boutique_produits_section white">
           <h3>Découvrez le menu </h3>
           <p>

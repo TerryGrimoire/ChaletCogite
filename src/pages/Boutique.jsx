@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
 
+import Hero from "../components/Hero";
+
 function Boutique({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -42,6 +44,7 @@ function Boutique({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
+        <Hero number={3} />
         <section className="boutique_produits_section white">
           <h3>Découvrez nos produits</h3>
           <p>

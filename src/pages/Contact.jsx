@@ -6,18 +6,20 @@ import mel from "../assets/mel.png";
 import loc from "../assets/loc.png";
 import infos from "../assets/infos.png";
 import gite2 from "../assets/gite2.jpg";
+import Hero from "../components/Hero";
 
 function Contact({ helmet }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="flex flex-col align-center">
+    <div>
       <Helmet>
         <title> {helmet.title} | Contact </title>
         <link rel="canonical" href={`${helmet.href}/Services`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
+      <Hero number={5} />
       <main className="all_main contact_page">
         <section className="white">
           <h3>Nous contacter</h3>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import papa from "papaparse";
+import Hero from "../components/Hero";
 
 function Activites({ helmet }) {
   useEffect(() => {
@@ -44,6 +45,7 @@ function Activites({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
+        <Hero number={2} />
         {activite && activite.length > 0 && activite[0].evenement ? (
           <section className="white agenda_main_container">
             <h3>L'agenda du mois</h3>

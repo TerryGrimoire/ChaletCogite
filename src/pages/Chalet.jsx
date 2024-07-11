@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+
+import Hero from "../components/Hero";
 import logo from "../assets/logo.png";
 import chalet from "../assets/chalet1.jpg";
 import gite from "../assets/gite.jpg";
@@ -23,6 +25,7 @@ function Chalet({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
+        <Hero number={0} />
         <section className="chalet_page_intro white">
           <h3>Qui sommes nous ?</h3>
           <p>

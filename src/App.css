@@ -15,6 +15,9 @@
 
 
 /********************************************************************* BASIC CSS *********************************************************************/ 
+#detach-button-host {
+  display: none !important;
+}
 .mobile {
   display: none;
 }
@@ -161,17 +164,55 @@ header {
   text-transform: uppercase;
   color: white;
   font-size: 1.25rem;
+  z-index: 2;
 }
+
 .logo {
   height: 5rem;
   object-fit: cover;
   background-color: transparent;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 5px;
 }
+
 h3 {
   font-family: var(--font-title);
   padding: 20px 0;
   font-size: 4rem;
 }
+
+.hero {
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  bottom:15px;
+  left: 15px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--third-color);
+  color: black;
+}
+
 /********************************************************************* FOOTER ALL *********************************************************************/ 
 .all_footer {
   display: flex;
@@ -805,10 +846,6 @@ text-align: center;
 }
 
 /********************************************************************* BOUTIQUE *********************************************************************/ 
-.all_main {
-padding-top: 80px;
-}
-
 .boutique_produits_section {
   display: flex;
   flex-direction: column;

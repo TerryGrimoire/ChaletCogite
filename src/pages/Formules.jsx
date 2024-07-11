@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Hero from "../components/Hero";
 
 function Formules({ helmet }) {
   useEffect(() => {
@@ -12,6 +13,9 @@ function Formules({ helmet }) {
         <link rel="canonical" href={`${helmet.href}/formules`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
+      <main className="all_main">
+        <Hero number={1} />
+      </main>
     </div>
   );
 }
