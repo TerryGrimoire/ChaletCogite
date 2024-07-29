@@ -66,23 +66,22 @@ function Restauration({ helmet }) {
                 )
                 .map((el) => (
                   <div className="restaurant_menu_container">
-                    {el.semaine &&
-                      el.semaine.split(";").map((elou) => (
-                        <div className="menu">
-                          <h5>{elou.split(":")[0]}</h5>
-                          <p className="restaurant_menu_eloument">
-                            {elou
-                              .split(":")[1]
-                              .split(",")
-                              .map((eloument) => (
-                                <ul>
-                                  <p>{eloument}</p>{" "}
-                                  <img src={vague} alt="separateur" />{" "}
-                                </ul>
-                              ))}
-                          </p>
-                        </div>
-                      ))}
+                    {el.semaine && (
+                      <div className="menu">
+                        <h5>{el.semaine.split(":")[0]}</h5>
+                        <p className="restaurant_menu_eloument">
+                          {el.semaine
+                            .split(":")[1]
+                            .split(";")
+                            .map((eloument) => (
+                              <ul>
+                                <p>{eloument}</p>{" "}
+                                <img src={vague} alt="separateur" />{" "}
+                              </ul>
+                            ))}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 ))}
           </div>

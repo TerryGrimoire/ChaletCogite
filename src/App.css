@@ -244,11 +244,14 @@ h3 {
   align-items: center;
 }
 
+
 .all_footer section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  padding-top: 0;
 }
 
 .all_footer section div {
@@ -359,6 +362,31 @@ h3 {
 .footer_avis .alice-carousel__stage-item {
   vertical-align: top;
 }
+
+.footer_partenaires {
+width: 100%;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-color: wheat;
+}
+
+
+.footer_partenaires div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_partenaires img {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+}
+
 /********************************************************************* HOME *********************************************************************/ 
 .home_top {
   display: flex;
@@ -698,8 +726,8 @@ text-align: center;
   margin: 10px auto;
 }
 .restaurant_menu_container > * {
-  width: 25vw;
-  padding: 20px;
+  padding: 40px;
+  max-width: 40vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -717,11 +745,16 @@ text-align: center;
   align-items: center;
   margin: 10px;
 }
-
+.menu h5 {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+  font-family: var(--font-title);
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .restaurant_menu_eloument p {
   margin: 10px 0;
   font-size: 1.5rem;
-  font-weight: bold;
   font-family: var(--font-title);
 }
 

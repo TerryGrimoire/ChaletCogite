@@ -6,9 +6,9 @@ import animation from "../assets/animation.jpg";
 const aussi = [
   {
     id: 1,
-    titre: "Une cuisine saine avec des ingrédients du Dimitile",
+    titre: "UNE CUISINE SAINE AVEC DES INGRÉDIENTS LOCAUX",
     texte:
-      "Notre cuisine se fait au feu de bois avec des ingrédients principalement trouvé dans nos forêts du Dimitile afin de sensibiliser à l'autosuffisance alimentaire à La Réunion.",
+      "Notre cuisine se fait majoritairement au feu de bois avec des ingrédients du Dimitile, de la Réunion et de l’Océan Indien afin de sensibiliser et d’informer sur l’impact de notre alimentation sur notre environnement.",
     image: cuisine,
     link: "/Restauration",
   },
