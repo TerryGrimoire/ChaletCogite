@@ -1469,35 +1469,36 @@ header {
   height: fit-content;
   padding: 0;
   background-color: transparent;
+  position:fixed;
+  top: 0;
+  z-index: 5;
+  width: fit-content;
+}
+
+header * {
+  background-color: transparent;
+}
+header > button {border-radius: 50%;
+  width: 50px;
+  height: 50px;
+margin: 6px;
+background-color: black;
+border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+header img {
+  width: 30px;
+  height: 30px;
+  
+  object-fit: cover;
+  background-color: transparent;
 }
 .navbar {
-  display: flex;
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  width: 100%; 
-  height: fit-content;
-  padding: 0 ;
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  overflow: visible;
+  display: none;
 }
 
-.navbar > * {
-  padding:  0 10px;
-  background-color: transparent;
-  font-family: var(--font-title);
-  text-transform: uppercase;
-  color: white;
-  font-size: 1.25rem;
-  z-index: 2;
-}
-
-.navbar a {
-  overflow: visible;
-}
 
 .logo {
   height: 6rem;
@@ -1564,6 +1565,46 @@ h3 {
   color: black;
 }
 
+header .openBurger {
+  position: inherit;
+  z-index: 50;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  top: 0  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .openBurger button {
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-family: var(--font-title);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+header .openBurger .croix {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.croix img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
 /********************************************************************* FOOTER ALL *********************************************************************/ 
 .all_footer {
   display: flex;

@@ -1,23 +1,15 @@
 import React, { useState } from "react";
 import Nav from "../Navigation/Nav";
 import Navbar from "../Navigation/Navbar";
-import burger from "../../assets/menu.png";
+import burger from "../../assets/menu2.png";
 
 function Burger() {
   const [openBurger, setOpenBurger] = useState(false);
 
   return (
     <header className="flex justify-between align-center">
-      <button
-        type="button"
-        onClick={() => setOpenBurger(!openBurger)}
-        className="mobile no_button"
-      >
-        <img
-          src={burger}
-          alt="menu de navigation sur le site internet - trois lignes de navigation"
-          className="burger"
-        />
+      <button type="button" onClick={() => setOpenBurger(!openBurger)}>
+        <img src={burger} alt="" />
       </button>
 
       {openBurger && <Nav setOpenBurger={setOpenBurger} />}
