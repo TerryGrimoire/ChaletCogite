@@ -93,7 +93,9 @@ function Activites({ helmet }) {
                   <img src={el.image} alt={el.titre} />
                   <article>
                     <h4>{el.titre.toUpperCase()}</h4>
-                    <p>{el.texte}</p>
+                    {el.texte.split(";").map((elementaire) => (
+                      <p>{elementaire}</p>
+                    ))}
                   </article>
                 </div>
               ))}

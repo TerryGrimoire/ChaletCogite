@@ -64,19 +64,8 @@ function Footer() {
   }, []);
   return (
     <footer className="all_footer">
-      <div className="footer_avis">
-        <h3>Nos clients témoignent</h3>
-        <AliceCarousel
-          disableDotsControls
-          disableButtonsControls
-          infinite
-          items={items}
-          mouseTracking
-          responsive={responsive}
-        />
-      </div>
       <div className="footer_partenaires">
-        <h3>Ils nous font confiance</h3>
+        <h3>Ils nous ont fait confiance</h3>
         <div>
           {partenaires &&
             partenaires.length > 0 &&
@@ -88,6 +77,17 @@ function Footer() {
                 </article>
               ))}
         </div>
+      </div>
+      <div className="footer_avis">
+        <h3>Nos clients témoignent</h3>
+        <AliceCarousel
+          disableDotsControls
+          disableButtonsControls
+          infinite
+          items={items}
+          mouseTracking
+          responsive={responsive}
+        />
       </div>
 
       <section>

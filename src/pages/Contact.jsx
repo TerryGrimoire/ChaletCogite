@@ -62,20 +62,42 @@ function Contact({ helmet }) {
           </div>
         </section>
         <section className="home_trouver white">
-          <h3>Venir au chalet</h3>
-          <p>
-            Le chalet Cogite se trouve en terre de marronage, en plein coeur de
-            l'empire marron. Ainsi, une randonnée est néccessaire afin de vous y
-            rendre.
-          </p>
-
-          <iframe
-            src="//umap.openstreetmap.fr/fr/map/randonnee-a-pied-et-itineraire-4x4-jusquau-chalet-_217458?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true"
-            title="coigte"
-            allowFullScreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          />
+          <h3>Comment venir au chalet</h3>
+          <div>
+            <iframe
+              src="https://umap.openstreetmap.fr/fr/map/randonnee-a-pied-et-itineraire-4x4-jusquau-chalet-_217458?fbclid=IwZXh0bgNhZW0CMTAAAR28fmt8DMRi5Cv0YncUWtvSnkt2LC9zMvyLSWzNrd30hnE-62ZyyaUAoSs_aem_3BYqySwbacVVXU2R_2Secw#14/-21.1956/55.5050"
+              frameBorder="0"
+              title="Carte pour venir au Chalet CoGîte"
+            />
+            <article>
+              {" "}
+              <p>
+                • Randonnée à pied depuis le parking du Dimitile (Lieu dit “Le
+                Portail du Dimitile”){" "}
+              </p>
+              <p>
+                • Prendre la piste 4x4 sur 100 m (durée ~ 1 min) puis tourner à
+                gauche sur le Sentier Boeuf - La Chapelle jusqu'à la piste 4x4
+                (durée ~ 30 min)
+              </p>{" "}
+              <p>
+                • Marcher sur la piste 4x4 sur 1 km (durée ~ 15 min) puis
+                prendre à droite sur le Sentier Mal au Ventre jusqu'à la piste
+                4x4 (durée ~ 45 min)
+              </p>{" "}
+              <p>
+                • Monter a gauche sur la piste 4x4 pendant 8 minutes depasser la
+                chaine pour prendre à droite direction Le Chalet (durée ~ 15
+                min){" "}
+              </p>{" "}
+              <p>
+                • Prendre a droite pour descendre direction Le Chalet une
+                dernière fois sur la piste 4x4 Attention ça glisse (durée ~ 15
+                min). Le chalet se trouve sur votre droite, entrer par le
+                portail vert.
+              </p>
+            </article>
+          </div>
         </section>
       </main>
     </div>

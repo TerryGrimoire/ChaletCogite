@@ -371,22 +371,29 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 border-color: wheat;
+background-color: white;
 }
 
 
 .footer_partenaires div {
   display: flex;
   flex-wrap: wrap;
+  width: 80%;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 }
 
 .footer_partenaires img {
-  height: 65px;
+  height: 100px;
   width: auto;
   object-fit: contain;
+  margin: 30px;
 }
-
+.footer_partenaires * {
+  background-color: transparent;
+  color: black;
+}
 /********************************************************************* HOME *********************************************************************/ 
 .home_top {
   display: flex;
@@ -1186,6 +1193,28 @@ ________
   margin-right: 15px;
 }
 
+.home_trouver div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 40px 15vw;
+
+  }
+
+  .home_trouver div > * {
+    width: 50%;
+  }
+.home_trouver article {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_trouver div p {
+  margin: 10px 20px 30px;
+  text-align: left;
+}
 /********************************************************************* FORMULES PAGE *********************************************************************/ 
 .formules_main_container {
   display: flex;
@@ -2505,6 +2534,31 @@ ________
   height: 1.5rem;
   object-fit: contain;
   margin-right: 15px;
+}
+
+
+.home_trouver div {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0;
+
+  }
+
+  .home_trouver div > * {
+    width: 100%;
+  }
+.home_trouver article {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home_trouver div p {
+  margin: 10px 20px 30px;
+  text-align: left;
 }
 
 /********************************************************************* FORMULES PAGE *********************************************************************/ 

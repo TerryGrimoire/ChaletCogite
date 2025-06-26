@@ -29,14 +29,17 @@ function Chalet({ helmet }) {
         <section className="chalet_page_intro white">
           <h3>Qui sommes nous ?</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-            facere quod ad alias quasi distinctio dignissimos, totam aspernatur
-            error accusamus maxime blanditiis quas, quam sed ea nulla rerum
-            velit nesciunt? Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Nobis, facere quod ad alias quasi distinctio dignissimos,
-            totam aspernatur error accusamus maxime blanditiis quas, quam sed ea
-            nulla rerum velit nesciunt? Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit.
+            Bienvenue au Chalet CoGîte, chez Coralie et Quentin Josseron au
+            Dimitile. Originaires du Tampon, ces jumeaux ont grandi dans la
+            tradition créole, où l'accueil et le partage sont au cœur de la
+            culture. Bercés par les bons plats de mémé et les moments passés en
+            famille, ils ont voulu recréer cet esprit, en conjuguant amour pour
+            la nature et mode de vie simple et authentique. Persuadés que les
+            réponses aux défis écologiques d’aujourd’hui passent par la
+            sobriété, leur gîte reflète un engagement pour un tourisme plus
+            respectueux de l’environnement. Chaque détail est pensé pour un
+            séjour paisible et ressourçant, dans un cadre naturel exceptionnel,
+            tout en minimisant l'impact sur l’environnement alentour.
           </p>
         </section>
 
@@ -48,29 +51,15 @@ function Chalet({ helmet }) {
             </div>
             <img src={chalet} alt="" />
           </div>
-          <article className="chalet_middle_bottom">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              facere quod ad alias quasi distinctio dignissimos, totam
-              aspernatur error accusamus maxime blanditiis quas, quam sed ea
-              nulla rerum velit nesciunt? Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit.
-            </p>
-            <p>
-              Nobis, facere quod ad alias quasi distinctio dignissimos, totam
-              aspernatur error accusamus maxime blanditiis quas, quam sed ea
-              nulla rerum velit nesciunt?
-            </p>
-          </article>
         </section>
         <section className="chalet_page_top">
           <img src={logo} alt="" />
           <article>
             <p>
-              Nobis, facere quod ad alias quasi distinctio dignissimos, totam
-              aspernatur error accusamus maxime blanditiis quas, quam sed ea
-              nulla rerum velit nesciunt? Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit.
+              Que vous veniez pour vous reconnecter à la nature, déguster de
+              bons petits plats ou simplement vous offrir un moment de calme,
+              Coralie et Quentin vous accueillent avec plaisir au Chalet CoGîte.
+              Ici, simplicité rime avec convivialité, confort avec authenticité.
             </p>
           </article>
         </section>

@@ -76,14 +76,18 @@ export default function Home({ helmet }) {
       <section className="home_gite white">
         <div>
           <article>
-            <h3>Notre concept </h3>
+            <h3>Notre concept “ Alon Cogiter dann Dimitile” </h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              debitis quia aliquam? Nemo doloremque beatae modi perferendis
-              quidem. Dolorum, quas. Iusto maxime sit debitis facilis, officiis
-              dolores, corrupti repellendus aliquid dolor optio illum sequi?
-              Maxime maiores cum suscipit voluptate nesciunt et temporibus iure
-              incidunt iste. Explicabo maxime sit quis vero!
+              Le Chalet Cogite est une chambre d’hôtes éco responsable et
+              collaborative. Dans un petit chalet autonome en électricité et en
+              eau, faîtes l’expérience d’un tourisme durable dans un espace
+              naturel sensible. Venez “CoGiter”, en participant à la vie du lieu
+              ou simplement pour profiter du lieu et vous reposer.{" "}
+            </p>{" "}
+            <p>
+              Cogiter c’est aussi réfléchir aux enjeux de la transition
+              écologique via le partage de la tradition et du savoir vivre
+              créole réunionnais.
             </p>
             <Link to="/Chalet">
               <button type="button" className="button_style">
@@ -148,23 +152,7 @@ export default function Home({ helmet }) {
           inclure une formule repas.
         </p>
         <section>
-          <div>
-            <h4>Formule pied sous la table</h4>
-            <img src={pied} alt="personne qui se fait servir" />
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              facere quod ad alias quasi distinctio dignissimos, totam
-              aspernatur error accusamus maxime blanditiis quas, quam sed ea
-              nulla rerum velit nesciunt?
-            </p>
-            <Link to="/Formules">
-              {" "}
-              <button type="button" className="button_style">
-                Découvrir cette formule
-              </button>
-            </Link>
-          </div>
-
+          {" "}
           <div>
             <h4>Formule donne la main</h4>
             <img
@@ -172,12 +160,28 @@ export default function Home({ helmet }) {
               alt="personne qui cuisine avec d'autres gens qui aident derrière"
             />
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis,
-              facere quod ad alias quasi distinctio dignissimos, totam
-              aspernatur error accusamus maxime blanditiis quas, quam sed ea
-              nulla rerum velit nesciunt?
+              Cette formule vous offre une expérience conviviale et
+              collaborative. En plus de votre hébergement en chambre, vous
+              pourrez participer à la confection des repas avec nous. Vous
+              contribuerez également à la vaisselle et au maintien de la
+              propreté du gîte.
             </p>
             <Link to="/Formules">
+              <button type="button" className="button_style">
+                Découvrir cette formule
+              </button>
+            </Link>
+          </div>
+          <div>
+            <h4>Formule pied sous la table</h4>
+            <img src={pied} alt="personne qui se fait servir" />
+            <p>
+              Cette formule, plus classique est parfaite pour ceux qui cherchent
+              à se détendre complètement et profiter d'un cadre unique en
+              harmonie avec la nature.
+            </p>
+            <Link to="/Formules">
+              {" "}
               <button type="button" className="button_style">
                 Découvrir cette formule
               </button>
