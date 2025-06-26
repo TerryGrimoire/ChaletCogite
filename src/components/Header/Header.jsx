@@ -8,7 +8,11 @@ function Burger() {
 
   return (
     <header className="flex justify-between align-center">
-      <button type="button" onClick={() => setOpenBurger(!openBurger)} className="mobile">
+      <button
+        type="button"
+        onClick={() => setOpenBurger(!openBurger)}
+        className="mobile"
+      >
         <img src={burger} alt="" />
       </button>
 
