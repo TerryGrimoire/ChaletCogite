@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 
 import Hero from "../components/Hero";
 import logo from "../assets/logo.png";
-import chalet from "../assets/chalet1.jpg";
+import chalet from "../assets/chalet11.jpg";
 import gite from "../assets/gite.jpg";
 import gite2 from "../assets/gite9.jpg";
 import gite3 from "../assets/gite8.jpg";

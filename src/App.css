@@ -844,7 +844,7 @@ text-align: center;
 
 .chalet_middle_top .duo_photo img {
   width: 100%;
-  height: 25vh;
+  height: 50%;
   margin: 5px 0;
   object-fit: cover;
 }
