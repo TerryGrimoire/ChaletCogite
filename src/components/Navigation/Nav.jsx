@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import croix from "../../assets/fermer.png";
 
-function Nav({ setOpenBurger }) {
+function Nav({ setOpenBurger, langue }) {
   return (
     <nav className="flex-col openBurger justify-between mobile">
       <button
@@ -14,37 +14,37 @@ function Nav({ setOpenBurger }) {
       </button>
       <Link to="/">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Accueil
+          {langue ? "Accueil" : "Akèy"}
         </button>
       </Link>
       <Link to="/Chalet">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Le Chalet
+          {langue ? "Le Chalet" : "Lo Shalé"}
         </button>
       </Link>
       <Link to="/Formules">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          formules
+          {langue ? "Formules" : "Formul"}
         </button>
       </Link>
       <Link to="/Activites">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Activités
+          {langue ? "Activités" : "Zaktivité"}
         </button>
       </Link>
       <Link to="/Boutique">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Boutique
+          {langue ? "Boutique" : "Boutik"}
         </button>
       </Link>
       <Link to="/Restauration">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Restauration
+          {langue ? "Restauration" : "Restorasyon"}
         </button>
       </Link>
       <Link to="/Contact">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Contact
+          {langue ? "Contact" : "Kontakt"}
         </button>
       </Link>
     </nav>

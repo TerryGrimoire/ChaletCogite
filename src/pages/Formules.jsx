@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import Hero from "../components/Hero";
 
-function Formules({ helmet }) {
+function Formules({ helmet, langue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,7 +43,7 @@ function Formules({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
-        <Hero number={1} />
+        <Hero number={1} langue={langue} />
         <section className="all_section formules_main_container white">
           <h3>Différentes formules pour différentes envies</h3>
           <p>

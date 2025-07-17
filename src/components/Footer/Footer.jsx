@@ -13,7 +13,7 @@ import ue from "../../assets/ue.png";
 import evaluation from "../../assets/evaluation.png";
 import google from "../../assets/google.png";
 
-function Footer() {
+function Footer({ langue }) {
   const handleDragStart = (e) => e.preventDefault();
   const [partenaires, setPartenaires] = useState([]);
 
@@ -65,7 +65,9 @@ function Footer() {
   return (
     <footer className="all_footer">
       <div className="footer_partenaires">
-        <h3>Ils nous ont fait confiance</h3>
+        <h3>
+          {langue ? "Ils nous ont fait confiance" : "Zot i fé anou konfyans"}
+        </h3>
         <div>
           {partenaires &&
             partenaires.length > 0 &&
@@ -79,7 +81,9 @@ function Footer() {
         </div>
       </div>
       <div className="footer_avis">
-        <h3>Nos clients témoignent</h3>
+        <h3>
+          {langue ? "Nos clients témoignent" : "Kosa nout kliyan i pans de nou"}
+        </h3>
         <AliceCarousel
           disableDotsControls
           disableButtonsControls
@@ -93,7 +97,11 @@ function Footer() {
       <section>
         <div className="main_footer">
           <div>
-            <h5>Retrouvez nous sur les réseaux sociaux</h5>
+            <h5>
+              {langue
+                ? "Retrouvez nous sur les réseaux sociaux"
+                : "Artrouv anou su rézo sosyo"}
+            </h5>
             <div className="social">
               <a href="/">
                 <img src={facebook} alt="logo Facebook" />
@@ -108,9 +116,9 @@ function Footer() {
           </div>
           <div>
             <p>
-              Ce site a été financé par l’Union Européenne dans le cadre du
-              programme FEDER-FSE+ Réunion dont l’Autorité de gestion est la
-              Région Réunion. L’Europe s’engage à La Réunion avec le fonds FEDER{" "}
+              {langue
+                ? "Ce site a été financé par l’Union Européenne dans le cadre du programme FEDER-FSE+ Réunion dont l’Autorité de gestion est la Région Réunion. L’Europe s’engage à La Réunion avec le fonds FEDER"
+                : "Sit la la été finansé par Lunion Européinn ek son program FEDER-FSE+ Rényon é son lotorité de jestyon sé La Réjyon Rényon. Leurop i angaj ali La Rényon sanm son fon FEDER. La Fondasyon de France la osi partisip dan le finansman. "}
             </p>
             <div>
               <img src={region} alt="logo Région Réunion" />
@@ -120,11 +128,19 @@ function Footer() {
         </div>
         <div>
           <p>
-            Design et conception du site internet par le{" "}
+            {langue
+              ? "Design, conception et traduction du site internet par le "
+              : "Disaynn, konsepsyon é traduksyon lo sit internet par lo "}
             <a href="https://grimoire-numerique.re">Grimoire Numérique</a>
           </p>
-          <Link to="/mentions">Mentions Légales</Link>
-          <Link to="/mentions">Politique de confidentialité</Link>
+          <Link to="/mentions">
+            {langue ? "Mentions Légales" : "Mansyon légal"}
+          </Link>
+          <Link to="/mentions">
+            {langue
+              ? "Politique de confidentialité"
+              : "Politik konfidansyalité"}
+          </Link>
         </div>
       </section>
     </footer>

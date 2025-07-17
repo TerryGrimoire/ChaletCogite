@@ -3,7 +3,7 @@ import Nav from "../Navigation/Nav";
 import Navbar from "../Navigation/Navbar";
 import burger from "../../assets/menu2.png";
 
-function Burger() {
+function Burger({ langue }) {
   const [openBurger, setOpenBurger] = useState(false);
 
   return (
@@ -13,12 +13,12 @@ function Burger() {
         onClick={() => setOpenBurger(!openBurger)}
         className="mobile"
       >
-        <img src={burger} alt="" />
+        <img src={burger} alt="menu burger" />
       </button>
 
-      {openBurger && <Nav setOpenBurger={setOpenBurger} />}
+      {openBurger && <Nav setOpenBurger={setOpenBurger} langue={langue} />}
 
-      <Navbar setOpenBurger={setOpenBurger} />
+      <Navbar setOpenBurger={setOpenBurger} langue={langue} />
     </header>
   );
 }

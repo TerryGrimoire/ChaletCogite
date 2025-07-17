@@ -8,7 +8,7 @@ import infos from "../assets/infos.png";
 import gite2 from "../assets/gite2.jpg";
 import Hero from "../components/Hero";
 
-function Contact({ helmet }) {
+function Contact({ helmet, langue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,7 +19,7 @@ function Contact({ helmet }) {
         <link rel="canonical" href={`${helmet.href}/Services`} />
         <meta name="description" content={helmet.description} />
       </Helmet>
-      <Hero number={5} />
+      <Hero number={5} langue={langue} />
       <main className="all_main contact_page">
         <section className="white">
           <h3>Nous contacter</h3>

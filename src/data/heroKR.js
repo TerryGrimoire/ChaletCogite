@@ -7,37 +7,36 @@ import restauration from "../assets/banniereRestauration.avif";
 
 
 
-
 const hero = [
   {
     id: 0,
     img: chalet,
-    title: "Le Chalet",
+    title: "Lo shalé",
   },
   {
     id: 1,
     img: formule,
-    title: "Nos Formules",
+    title: "Nout Formul",
   },
   {
     id: 2,
     img: activite,
-    title: "Les Activités",
+    title: "Nout zaktivité",
   },
   {
     id: 3,
     img: boutique,
-    title: "La Boutique",
+    title: "La Boutik",
   },
   {
     id: 4,
     img: restauration,
-    title: "Restauration",
+    title: "Restorasyon",
   },
   {
     id: 5,
     img: contact,
-    title: "Contact",
+    title: "Kontakt",
   },
 ];
 

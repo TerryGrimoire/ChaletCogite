@@ -4,7 +4,7 @@ import papa from "papaparse";
 
 import Hero from "../components/Hero";
 
-function Boutique({ helmet }) {
+function Boutique({ helmet, langue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -44,12 +44,12 @@ function Boutique({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
-        <Hero number={3} />
+        <Hero number={3} langue={langue} />
         <section className="boutique_produits_section white">
           <h3>Découvrez nos produits</h3>
           <p>
-            Nos produits sont disponibles sur commande, en quantité limitée. Sur place ou en point relais dans les bas. 
-
+            Nos produits sont disponibles sur commande, en quantité limitée. Sur
+            place ou en point relais dans les bas.
           </p>
           <div className="boutique_produits_container">
             {boutique &&

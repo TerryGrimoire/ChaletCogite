@@ -13,7 +13,7 @@ import infos from "../assets/lune.svg";
 import animal from "../assets/patte.svg";
 import pol from "../assets/pol.svg";
 
-function Chalet({ helmet }) {
+function Chalet({ helmet, langue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -25,7 +25,7 @@ function Chalet({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
-        <Hero number={0} />
+        <Hero number={0} langue={langue} />
         <section className="chalet_page_intro white">
           <h3>Qui sommes nous ?</h3>
           <p>

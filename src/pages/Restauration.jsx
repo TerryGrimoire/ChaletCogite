@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 
 import vague from "../assets/separateur.svg";
 
-function Restauration({ helmet }) {
+function Restauration({ helmet, langue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -46,7 +46,7 @@ function Restauration({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
-        <Hero number={4} />
+        <Hero number={4} langue={langue} />
         <section className="boutique_produits_section white">
           <h3>Kosa néna pou manjé</h3>
           <p>

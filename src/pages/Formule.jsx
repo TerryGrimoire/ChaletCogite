@@ -13,7 +13,7 @@ import confort from "../assets/confort.png";
 import bain from "../assets/bain.png";
 import resto from "../assets/resto2.png";
 
-function Formule({ helmet }) {
+function Formule({ helmet, langue }) {
   const { id } = useParams();
 
   useEffect(() => {

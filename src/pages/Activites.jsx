@@ -6,7 +6,7 @@ import Hero from "../components/Hero";
 
 import euro from "../assets/euro.png";
 
-function Activites({ helmet }) {
+function Activites({ helmet, langue }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,7 +47,7 @@ function Activites({ helmet }) {
         <meta name="description" content={helmet.description} />
       </Helmet>
       <main className="all_main">
-        <Hero number={2} />
+        <Hero number={2} langue={langue} />
         {activite && activite.length > 0 && activite[0].evenement ? (
           <section className="white agenda_main_container">
             <h3>L'agenda du mois</h3>
