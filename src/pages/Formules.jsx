@@ -58,7 +58,6 @@ function Formules({ helmet }) {
               <li>Tarif enfants à partir de 3 ans, jusqu'à 9 ans 40 €</li>
               <li>
                 Tarif Bébés séjour offert (0 à 2 ans) (2 bébés par groupe)
-                Développer chambre par chambre?
               </li>
             </ul>
           </small>
