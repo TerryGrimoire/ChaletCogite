@@ -1,5 +1,5 @@
 import cuisine from "../assets/cuisine2.jpg";
-import activite from "../assets/activite.jpg";
+import activite from "../assets/activite.jpeg";
 import boutique from "../assets/boutique.jpg";
 import animation from "../assets/animation.jpg";
 
