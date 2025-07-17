@@ -1,21 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import papa from "papaparse";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import video from "../assets/video.mp4";
-import gite2 from "../assets/gite2.jpg";
-import gite from "../assets/gite.jpg";
+
 import gite1 from "../assets/gite1.jpg";
-import gite3 from "../assets/gite3.jpg";
-import gite4 from "../assets/gite4.jpg";
-import gite5 from "../assets/gite5.jpg";
-import gite6 from "../assets/gite6.jpg";
-import gite7 from "../assets/gite7.jpg";
-import gite8 from "../assets/gite8.jpg";
-import gite9 from "../assets/gite9.jpg";
-import gite10 from "../assets/gite10.jpg";
-import gite11 from "../assets/gite11.jpg";
 import pied from "../assets/pied.jpg";
 import main from "../assets/main.jpg";
 import droite from "../assets/droite.png";
@@ -28,20 +19,41 @@ export default function Home({ helmet }) {
   }, []);
 
   const handleDragStart = (e) => e.preventDefault();
+  const [hero, setHero] = useState([]);
+  const prepareData = (data2) => {
+    // j correspond aux lignes de A à ZZZ sur fichier Excel
+    // index
+    // line correspond à
+    // index correspond à
+    // key correspond à
 
-  const items = [
-    <img src={gite} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite2} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite3} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite4} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite5} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite6} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite7} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite8} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite9} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite10} onDragStart={handleDragStart} alt="presentation" />,
-    <img src={gite11} onDragStart={handleDragStart} alt="presentation" />,
-  ];
+    let obj = {};
+    const json = data2.map((line) => {
+      data2[1].forEach((key, j) => {
+        obj = { ...obj, [key]: line[j] };
+      });
+
+      return obj;
+    });
+
+    json.shift();
+    setHero(json);
+  };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    fetch(import.meta.env.VITE_HERO)
+      .then((result) => result.text())
+      .then((text) => papa.parse(text))
+      .then((data2) => prepareData(data2.data));
+  }, []);
+
+  const dataReal = hero && hero[1] && hero[1].galerie.split(";");
+
+  const items =
+    dataReal &&
+    dataReal.map((el) => (
+      <img src={el} onDragStart={handleDragStart} alt="presentation" />
+    ));
 
   return (
     <main className="flex-col">
@@ -115,6 +127,9 @@ export default function Home({ helmet }) {
           <AliceCarousel
             mouseTracking
             disableDotsControls
+            autoPlay
+            autoPlayStrategy="none"
+            autoPlayInterval={1000}
             items={items}
             infinite
             renderPrevButton={() => {
