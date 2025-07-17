@@ -58,7 +58,7 @@ export default function Home({ helmet }) {
         <div className="veil" />
         <article>
           <h1>Le Chalet CoGîte</h1>
-          <h2> Le gîte écologique en agroforesterie du Dimitile</h2>
+          <h2> L'Ecogite du Dimitile</h2>
           <div className="buttons_container">
             <Link to="/Chalet">
               <button className="button_style" type="button">
@@ -76,16 +76,17 @@ export default function Home({ helmet }) {
       <section className="home_gite white">
         <div>
           <article>
-            <h3>Notre concept “ Alon Cogiter dann Dimitile” </h3>
+            <h3>LE CONCEPT “ Alon Cogiter dann Dimitile” </h3>
             <p>
-              Le Chalet Cogite est une chambre d’hôtes éco responsable et
-              collaborative. Dans un petit chalet autonome en électricité et en
-              eau, faîtes l’expérience d’un tourisme durable dans un espace
-              naturel sensible. Venez “CoGiter”, en participant à la vie du lieu
-              ou simplement pour profiter du lieu et vous reposer.{" "}
+              Le Chalet Cogite c’est notre chambre d’hôtes éco responsable et
+              collaborative. Dans notre petit chalet autonome en électricité et
+              en eau, faîtes l’expérience d’un tourisme durable au cœur d’un
+              espace naturel sensible.
             </p>{" "}
             <p>
-              Cogiter c’est aussi réfléchir aux enjeux de la transition
+              Venez “CoGiter” avec nous, en participant à la vie du lieu ou
+              simplement pour profiter de la fraîcheur des hauts et vous
+              reposer. Cogiter c’est aussi réfléchir aux enjeux de la transition
               écologique via le partage de la tradition et du savoir vivre
               créole réunionnais.
             </p>
@@ -145,26 +146,25 @@ export default function Home({ helmet }) {
       <section className="home_formules">
         <h3>Nos formules</h3>
         <p>
-          Le cogîte propose à tous nos visiteurs deux formules en fonction de
-          leurs besoins et leurs attentes. Bien plus qu'un gîte, nous avons à
-          coeur de créer du lien et partager des moments avec nos visiteurs. A
-          noter, il est possible de venir au gîte juste pour dormir, sans
-          inclure une formule repas.
+          Nous proposons des formules différentes selon les envies et le nombre
+          de personnes. Un peu plus que gîter nous vous invitons à CoGîter avec
+          nous, à vivre l’expérience collaborative d’une nuit en gîte.
         </p>
         <section>
           {" "}
           <div>
-            <h4>Formule donne la main</h4>
+            <h4>Formule "Donn' la main"</h4>
             <img
               src={main}
               alt="personne qui cuisine avec d'autres gens qui aident derrière"
             />
             <p>
-              Cette formule vous offre une expérience conviviale et
-              collaborative. En plus de votre hébergement en chambre, vous
-              pourrez participer à la confection des repas avec nous. Vous
-              contribuerez également à la vaisselle et au maintien de la
-              propreté du gîte.
+              La formule "Donn' la main" (à partir de 6 personnes) vous offre
+              une expérience conviviale et collaborative. En plus de votre
+              hébergement en chambre, vous pourrez participer à la préparation
+              du dîner et petit-déjeuner avec des ingrédients frais, locaux et
+              de saison. Nous faisons tout ensemble, que ce soit la vaisselle ou
+              le maintien de la propreté du gîte.
             </p>
             <Link to="/Formules">
               <button type="button" className="button_style">
@@ -173,12 +173,14 @@ export default function Home({ helmet }) {
             </Link>
           </div>
           <div>
-            <h4>Formule pied sous la table</h4>
+            <h4>Formule “Pié sou tab”</h4>
             <img src={pied} alt="personne qui se fait servir" />
             <p>
-              Cette formule, plus classique est parfaite pour ceux qui cherchent
-              à se détendre complètement et profiter d'un cadre unique en
-              harmonie avec la nature.
+              La formule "Pied sous table" , plus classique, est parfaite pour
+              ceux qui cherchent à se détendre complètement et profiter d'un
+              cadre unique en harmonie avec la nature. Elle inclut votre
+              hébergement en chambre, ainsi que le dîner et petit déjeuner
+              préparés avec des ingrédients frais, locaux et de saison.
             </p>
             <Link to="/Formules">
               {" "}
@@ -207,10 +209,14 @@ export default function Home({ helmet }) {
       <section className="home_trouver white">
         <h3>Nous trouver</h3>
         <p>
-          Le chalet Cogite se trouve en terre de marronage, en plein coeur de
-          l'empire marron.
+          Le Chalet Cogite se trouve en plein cœur de l'empire marron au
+          Dimitile. Accessible à pied par sentier ou en 4x4.
         </p>
-
+        <small>
+          <a href="https://g.co/kgs/XVwEiCf" target="_blank" rel="noreferrer">
+            51 Piste 4x4 Jean Dubard, Entre-Deux 97414, La Réunion
+          </a>
+        </small>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.9893449491847!2d55.505811099999995!3d-21.1899921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21787500604c5a2b%3A0x43e20c61844bef73!2sLe%20Chalet%20CoGite!5e1!3m2!1sfr!2sfr!4v1720087504866!5m2!1sfr!2sfr"
           title="coigte"

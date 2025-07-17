@@ -48,13 +48,15 @@ function Restauration({ helmet }) {
       <main className="all_main">
         <Hero number={4} />
         <section className="boutique_produits_section white">
-          <h3>Découvrez le menu </h3>
+          <h3>Kosa néna pou manjé</h3>
           <p>
-            Nos menus varient en fonction des saisons et des différentes
-            récoltes de la semaine.
+            Une cuisine généreuse au feu de bois, mélange de cuisine locale,
+            familiale et de cuisine du monde. Pas un carry sans son rougail et
+            son brèdes lakour. C’est ce que vous mijote les marmites du Chalet
+            Cogite
           </p>
 
-          <div className="boutique_produits_container">
+          <div className="resto_container">
             {restauration &&
               restauration.length > 0 &&
               restauration[0] &&

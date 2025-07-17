@@ -82,7 +82,7 @@ function Activites({ helmet }) {
         ) : null}
 
         <section className="boutique_article_main_container white">
-          <h3>Autour du Chalet Cogîte</h3>
+          <h3>Les activités autour du Chalet Cogite </h3>
           <div className="boutique_article_container">
             {activite
               .filter(

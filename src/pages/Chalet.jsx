@@ -29,17 +29,25 @@ function Chalet({ helmet }) {
         <section className="chalet_page_intro white">
           <h3>Qui sommes nous ?</h3>
           <p>
-            Bienvenue au Chalet CoGîte, chez Coralie et Quentin Josseron au
-            Dimitile. Originaires du Tampon, ces jumeaux ont grandi dans la
-            tradition créole, où l'accueil et le partage sont au cœur de la
-            culture. Bercés par les bons plats de mémé et les moments passés en
-            famille, ils ont voulu recréer cet esprit, en conjuguant amour pour
-            la nature et mode de vie simple et authentique. Persuadés que les
-            réponses aux défis écologiques d’aujourd’hui passent par la
-            sobriété, leur gîte reflète un engagement pour un tourisme plus
-            respectueux de l’environnement. Chaque détail est pensé pour un
-            séjour paisible et ressourçant, dans un cadre naturel exceptionnel,
-            tout en minimisant l'impact sur l’environnement alentour.
+            Bienvenue au Chalet CoGîte, chez nous, Coralie et Quentin Josseron
+            au Dimitile. Non pas mari et femme nous sommes jumeaux originaires
+            du Tampon. On a grandi dans la tradition créole, où l'accueil et le
+            partage sont au cœur de notre culture. Régalés par les bons carris
+            de mamie et les moments passés en famille, on a voulu recréer cet
+            esprit, en mêlant amour pour la nature, simplicité et authenticité.
+            Persuadés que les réponses aux défis écologiques d’aujourd’hui
+            passent par la sobriété, notre gîte reflète un engagement pour un
+            tourisme plus respectueux de l’environnement.
+          </p>
+          <p>
+            Le Chalet CoGite, c’est la garantie d’un séjour paisible et
+            ressourçant, dans un cadre naturel exceptionnel, tout en minimisant
+            l'impact sur l’environnement alentour.
+          </p>
+          <p>
+            Que vous veniez pour vous reconnecter à la nature, profiter d’un
+            moment convivial, déguster de bons petits mangés ou simplement vous
+            offrir un moment de calme, notre petit cocon est l'option idéale.
           </p>
         </section>
 

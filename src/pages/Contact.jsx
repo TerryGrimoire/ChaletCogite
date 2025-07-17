@@ -44,7 +44,7 @@ function Contact({ helmet }) {
                   src={infos}
                   alt="icone d'une maison pour donner des informations sur le chalet"
                 />
-                <p>Ouvert tous les jours de la semaine et le weekend</p>
+                <p>Sur réservation uniquement</p>
               </li>
               <li>
                 <img src={tel} alt="icone d'un téléphone" />
@@ -54,8 +54,11 @@ function Contact({ helmet }) {
               </li>
               <li>
                 <img src={mel} alt="icone d'une enveloppe" />
-                <a href="mailto:chalet.cogite@protonmail.com">
-                  <p>chalet.cogite@protonmail.com</p>
+                <a
+                  href="mailto:contact@chaletcogite.re
+"
+                >
+                  <p>contact@chaletcogite.re</p>
                 </a>
               </li>
             </ul>

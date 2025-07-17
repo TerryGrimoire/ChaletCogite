@@ -45,12 +45,23 @@ function Formules({ helmet }) {
       <main className="all_main">
         <Hero number={1} />
         <section className="all_section formules_main_container white">
-          <h3>Des formules adaptées à tous les budgets</h3>
+          <h3>Différentes formules pour différentes envies</h3>
           <p>
-            Nous proposons plusieurs formules adapatées à tous les profils et à
-            tous les budgets. Avec ou sans repas, dans le gîte, dans la cabane
-            ou en camping, chacun peut y trouver son compte.
+            Nous proposons plusieurs formules adaptées selon vos envies et votre
+            budget. Une nuit dans le chalet ou dans la cabane, en couple ou en
+            groupe, en formule collaborative ou formule plus classique, vous
+            avez le choix.
           </p>
+
+          <small>
+            <ul>
+              <li>Tarif enfants à partir de 3 ans, jusqu'à 9 ans 40 €</li>
+              <li>
+                Tarif Bébés séjour offert (0 à 2 ans) (2 bébés par groupe)
+                Développer chambre par chambre?
+              </li>
+            </ul>
+          </small>
           <div className="formules_container">
             {formules &&
               formules.length > 0 &&

@@ -48,8 +48,8 @@ function Boutique({ helmet }) {
         <section className="boutique_produits_section white">
           <h3>Découvrez nos produits</h3>
           <p>
-            Les produits sont disponibles dans notre boutique uniquement, merci
-            de nous contacter pour plus d'informations.
+            Nos produits sont disponibles sur commande, en quantité limitée. Sur place ou en point relais dans les bas. 
+
           </p>
           <div className="boutique_produits_container">
             {boutique &&
@@ -71,7 +71,7 @@ function Boutique({ helmet }) {
           </div>
         </section>
         <section className="boutique_article_main_container white">
-          <h3>Tout savoir sur la boutique du cogîte</h3>
+          <h3>A propos de notre boutique </h3>
           <div className="boutique_article_container">
             {boutique
               .filter(

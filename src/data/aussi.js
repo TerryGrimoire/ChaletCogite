@@ -6,33 +6,33 @@ import animation from "../assets/animation.jpg";
 const aussi = [
   {
     id: 1,
-    titre: "UNE CUISINE SAINE AVEC DES INGRÉDIENTS LOCAUX",
+    titre: "Une cuisine saine avec des ingrédients locaux",
     texte:
-      "Notre cuisine se fait majoritairement au feu de bois avec des ingrédients du Dimitile, de la Réunion et de l’Océan Indien afin de sensibiliser et d’informer sur l’impact de notre alimentation sur notre environnement.",
+      "La cuisine réunionnaise, de par sa diversité culturelle, met en l’air une grande variété de fruits et légumes locaux. Enrichie par des inspirations culinaires du reste du monde, notre cuisine saura vous offrir une expérience haute en couleurs et en goûts. Ici en haut tout est fait maison avec des produits sains, de la grande cuisine pour un petit boucan. ",
     image: cuisine,
     link: "/Restauration",
   },
   {
     id: 2,
-    titre: "Des animations de protection de l'environnement",
+    titre: "Des chantiers de restauration écologique",
     texte:
-      "Parce que la protection de l'environnement nous tient à coeur et que nous sommes persuadés que chaque petite action citoyenne va contribuer à changer le monde, nous faisons régulièrement des animations autour de la protection de nos espèces endémiques.",
+      "Nous avons appris à maîtriser l’expansion des espèces envahissantes sur notre parcelle. Régulièrement, nous organisons des chantiers de restaurations écologiques, visant à lutter contre les espèces envahissantes et à replanter les espèces endémiques appropriées. Le but de notre démarche est de contribuer à redonner petit à petit à notre forêt de Bois de couleur des Hauts, son aspect originel. ",
     image: activite,
     link: "/Activites",
   },
   {
     id: 3,
-    titre: "Une boutique avec des produits artisanaux",
+    titre: "Notre boutique de produits artisanaux ",
     texte:
-      "Nous proposons aux collégiens et lycéens de nombreuses activités telles que la découverte de nos fôrets et des espèces envahissantes, des ateliers théâtre, initiations au maloya, moringue, etc.",
+      "Découvrez sur commande, nos produits artisanaux et transformations des trésors de la forêt et de nos jardins. Tisanes, poudre, confiture, sirop, huile, bâton de fumigation et autres produits en quantité limitée au rythme des saisons.",
     image: boutique,
     link: "/Boutique",
   },
   {
     id: 4,
-    titre: "Des activités périscolaires",
+    titre: "Séjours jeunes, stages et autres événements ",
     texte:
-      "Nous proposons aux collégiens et aux lycéens de nombreuses activités telles que la découverte de nos forêts et des espèces envahissantes, des ateliers théâtre, initiations au maloya, moringue, etc.",
+      "Nous proposons de nombreuses activités telles que la découverte de nos forêts et des espèces envahissantes, des ateliers théâtre d’improvisation, initiations au maloya, moringue, yoga etc. Au travers de divers événements, stages, séjours de team building, colonies de vacances, le Chalet CoGîte devient le lieu idéal de nombreuses expériences.",
     image: animation,
     link: "/Activites",
   },

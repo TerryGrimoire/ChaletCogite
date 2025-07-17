@@ -1,36 +1,35 @@
 import maison from "../assets/maison.png";
-import resto from "../assets/resto.png";
+import lontan from "../assets/lontan.png";
 import hobby from "../assets/hobby.png";
 import jardin from "../assets/jardin.png";
 
 const propositions = [
   {
     id: 1,
-    titre: "Vivre ensemble",
+    titre: "CO-GITER",
     image: maison,
     texte:
-      "Notre gîte est basé sur le partage et sur le faire-ensemble pour mieux vivre-ensemble.",
+      "Notre gîte est connu pour son concept de CoGiter, gîter ensemble. Avec la formule Donn’ la Main, c’est une autre vision du tourisme chez l’habitant.",
   },
   {
     id: 2,
-    titre: "Cuisine Lontan",
-    image: resto,
-    texte:
-      "Nous cuisinons au feu de bois avec uniquement des ingrédients locaux et sains.",
+    titre: "CUISINE LONTAN",
+    image: lontan,
+    texte: "Nous cuisinons au feu de bois avec des ingrédients locaux",
   },
   {
     id: 3,
-    titre: "Transmission aux jeunes",
+    titre: "TRANSMISSION AUX JEUNES",
     image: hobby,
     texte:
-      "Nous proposons des ateliers autour de notre histoire, du maloya ou du moringue. ",
+      "Notre lieu propose un espace pour des ateliers autour de l’histoire de la réunion, du maloya, des tisanes, du théatre d’improvisation, du yoga ou autre. ",
   },
   {
     id: 4,
-    titre: "Protéger nos fôrets",
+    titre: "RESTAURER NOS FÔRETS",
     image: jardin,
     texte:
-      "Nous avons à coeur la lutte contre les espèces envahissantes de nos fôrets.",
+      "Nous luttons contre les espèces envahissantes de nos forêts et plantons des espèces endémiques.",
   },
 ];
 
