@@ -27,7 +27,7 @@ function Chalet({ helmet, langue }) {
       <main className="all_main">
         <Hero number={0} langue={langue} />
         <section className="chalet_page_intro white">
-          <h3>Qui sommes nous ?</h3>
+          <h3>{langue ? "Qui sommes nous ?" : "Kisa nou lé ? "}</h3>
           <p>
             Bienvenue au Chalet CoGîte, chez nous, Coralie et Quentin Josseron
             au Dimitile. Non pas mari et femme nous sommes jumeaux originaires
@@ -94,7 +94,11 @@ function Chalet({ helmet, langue }) {
                   <img src={animal} alt="" />
                   <p> Les animaux ne sont pas acceptés</p>
                 </li>
-                <a href="/">
+                <a
+                  href="https://drive.google.com/file/d/1qJgM1NvY3S3jgCBoYEzXe-RdhnuLgT2v/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={pol} alt="" /> Découvrir les règles du chalet
                 </a>
               </ul>

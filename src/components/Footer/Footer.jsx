@@ -130,7 +130,7 @@ function Footer({ langue }) {
           <p>
             {langue
               ? "Design, conception et traduction du site internet par le "
-              : "Disaynn, konsepsyon é traduksyon lo sit internet par lo "}
+              : "Dizaynn, konsepsyon é traduksyon lo sit internet par lo "}
             <a href="https://grimoire-numerique.re">Grimoire Numérique</a>
           </p>
           <Link to="/mentions">
