@@ -10,31 +10,33 @@ function Boutique({ helmet, langue }) {
   }, []);
   const [boutique, setBoutique] = useState([]);
   const prepareData = (data2) => {
-    // j correspond aux lignes de A à ZZZ sur fichier Excel
-    // index
-    // line correspond à
-    // index correspond à
-    // key correspond à
+    const headers = data2[1];
+    const dataRows = data2.slice(1);
 
-    let obj = {};
-    const json = data2.map((line) => {
-      data2[1].forEach((key, j) => {
-        obj = { ...obj, [key]: line[j] };
+    // Choix des colonnes selon la langue
+    const selectedIndexes = langue
+      ? [0, 1, 2, 3, 4, 5, 6] // Colonnes A à G pour le français
+      : Array.from({ length: headers.length - 8 }, (_, i) => i + 8); // Colonnes I à fin pour le créole
+
+    const selectedHeaders = selectedIndexes.map((i) => headers[i]);
+
+    const json = dataRows.map((line) => {
+      const obj = {};
+      selectedIndexes.forEach((i, j) => {
+        obj[selectedHeaders[j]] = line[i];
       });
-
       return obj;
     });
 
-    json.shift();
     setBoutique(json);
   };
+
   useEffect(() => {
-    window.scrollTo(0, 0);
     fetch(import.meta.env.VITE_BOUTIQUE)
       .then((result) => result.text())
       .then((text) => papa.parse(text))
       .then((data2) => prepareData(data2.data));
-  }, []);
+  }, [langue]); // Recharger les données si langue change
 
   return (
     <div>
@@ -62,10 +64,12 @@ function Boutique({ helmet, langue }) {
                 .map((el) => (
                   <div className="boutique_produit">
                     <img src={el.photo} alt={el.produit} />
-                    <h5>{el.produit.toUpperCase()}</h5>
+                    <h5>{el.produit && el.produit.toUpperCase()}</h5>
                     <p>{el.prix} €</p>
                     <small
-                      className={el.stock.includes("stock") ? "blue" : "marron"}
+                      className={
+                        el.stock && el.stock.includes("sto") ? "blue" : "marron"
+                      }
                     >
                       {el.stock}
                     </small>
@@ -88,7 +92,7 @@ function Boutique({ helmet, langue }) {
                 <div>
                   <img src={el.image} alt={el.titre} />
                   <article>
-                    <h4>{el.titre.toUpperCase()}</h4>
+                    <h4>{el.titre && el.titre.toUpperCase()}</h4>
                     <p>{el.texte}</p>
                   </article>
                 </div>

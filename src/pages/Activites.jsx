@@ -13,31 +13,33 @@ function Activites({ helmet, langue }) {
 
   const [activite, setActivite] = useState([]);
   const prepareData = (data2) => {
-    // j correspond aux lignes de A à ZZZ sur fichier Excel
-    // index
-    // line correspond à
-    // index correspond à
-    // key correspond à
+    const headers = data2[1];
+    const dataRows = data2.slice(1);
 
-    let obj = {};
-    const json = data2.map((line) => {
-      data2[1].forEach((key, j) => {
-        obj = { ...obj, [key]: line[j] };
+    // Choix des colonnes selon la langue
+    const selectedIndexes = langue
+      ? [0, 1, 2, 3, 4, 5, 6, 7] // Colonnes A à G pour le français
+      : Array.from({ length: headers.length - 8 }, (_, i) => i + 8); // Colonnes I à fin pour le créole
+
+    const selectedHeaders = selectedIndexes.map((i) => headers[i]);
+
+    const json = dataRows.map((line) => {
+      const obj = {};
+      selectedIndexes.forEach((i, j) => {
+        obj[selectedHeaders[j]] = line[i];
       });
-
       return obj;
     });
 
-    json.shift();
     setActivite(json);
   };
+
   useEffect(() => {
-    window.scrollTo(0, 0);
     fetch(import.meta.env.VITE_ACTIVITES)
       .then((result) => result.text())
       .then((text) => papa.parse(text))
       .then((data2) => prepareData(data2.data));
-  }, []);
+  }, [langue]); // Recharger les données si langue change
 
   return (
     <div>
