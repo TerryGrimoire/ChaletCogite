@@ -1481,6 +1481,72 @@ align-items: center;
 }
 
 
+/********************************************************************* MENTIONS *********************************************************************/ 
+.mentions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 100px 10vw;
+}
+
+.mentions h2 {
+  text-align: left;
+  width: 100%;
+  margin: 40px 0 20px;
+  font-size: 2.5rem;
+}
+
+.mentions a {
+  color: var(--third-color);
+  text-decoration: underline;
+}
+
+.mentions p {
+  text-align: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/********************************************************************* ERROR404 *********************************************************************/ 
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10vw;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../src/assets/paille.webp);
+  background-size: 20%;
+}
+
+.error404 * {
+  background-color: transparent;
+  color: white;
+}
+.error404 h1 {
+  font-size: 10rem;
+  font-family: var(--font-title);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.error404 p {
+  text-align: center;
+  width: 100%; 
+font-size: 2rem; }
+
+.error404 a {
+  color: var(--third-color);
+  font-size: 1.5rem;
+  padding: 15px 40px;
+  margin-top: 40px;
+  background-color: var(--third-color);
+  border-radius: 1rem;
+  color: black;
+
+}
 
 
 

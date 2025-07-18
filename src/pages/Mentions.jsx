@@ -18,7 +18,7 @@ function Mentions() {
   };
 
   return (
-    <div className="mentions-container">
+    <div className="mentions">
       <h2>Mentions Légales</h2>
       <p>
         <b>Client :</b> tout professionnel ou personne physique capable au sens

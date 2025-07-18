@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
@@ -11,6 +11,7 @@ import Restauration from "./pages/Restauration";
 import Boutique from "./pages/Boutique";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
+import Erreur404 from "./pages/Error404";
 import france from "./assets/france.png";
 import reunion from "./assets/reunion.png";
 
@@ -58,6 +59,11 @@ function App() {
           element={<Contact helmet={helmet} langue={langue} />}
         />
         <Route path="/Mentions" element={<Mentions />} />
+        <Route
+          path="/404"
+          element={<Erreur404 helmet={helmet} langue={langue} />}
+        />
+        <Route path="*" element={<Navigate replace to="/404" />} />
       </Routes>
       <button
         className="LangueButton"
