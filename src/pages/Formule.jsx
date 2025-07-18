@@ -5,7 +5,7 @@ import papa from "papaparse";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
-import langue from "../assets/langue.png";
+import monde from "../assets/langue.png";
 import acco from "../assets/acco.png";
 import carte from "../assets/carte2.png";
 import rest from "../assets/rest.png";
@@ -69,14 +69,16 @@ function Formule({ helmet, langue }) {
       </div>
       <main className="all_main white formulebyId_container">
         <h3>
-          Plus de détails sur la formule{" "}
+          {langue
+            ? "Plus de détails sur la formule "
+            : "Plis zinformasyon su lo formul"}
           <span>{formule && formule.formules}</span>
         </h3>
         <article>
           {formule && formule.descriptif.split(";").map((el) => <p>{el}</p>)}
         </article>
         <div className="formulebyId_tarifs">
-          <h4>Prix par personne</h4>
+          <h4>{langue ? "Prix par personne" : "Pri par personn"}</h4>
           {formule &&
             formule.tarifs &&
             formule.tarifs.split(";").map((el) => (
@@ -114,7 +116,7 @@ function Formule({ helmet, langue }) {
             <div>
               <div>
                 <img src={resto} alt="fourchette et couteau" />{" "}
-                <h5>Restauration</h5>
+                <h5>{langue ? "Restauration" : "Restorasyon"}</h5>
               </div>{" "}
               <ul>
                 {formule.nourriture.split(";").map((element) => (
@@ -129,7 +131,8 @@ function Formule({ helmet, langue }) {
           {formule && formule.hygiene && (
             <div>
               <div>
-                <img src={bain} alt="baignoire" /> <h5>Salle de bain</h5>
+                <img src={bain} alt="baignoire" />{" "}
+                <h5>{langue ? "Salle de bain" : "Sal do bin"}</h5>
               </div>{" "}
               <ul>
                 {formule.hygiene.split(";").map((element) => (
@@ -144,7 +147,8 @@ function Formule({ helmet, langue }) {
           {formule && formule.confort && (
             <div>
               <div>
-                <img src={confort} alt="télévision" /> <h5>Confort</h5>
+                <img src={confort} alt="télévision" />{" "}
+                <h5>{langue ? "Confort" : "Konfor"}</h5>
               </div>{" "}
               <ul>
                 {formule.confort.split(";").map((element) => (
@@ -159,7 +163,8 @@ function Formule({ helmet, langue }) {
           {formule && formule.accomodation && (
             <div>
               <div>
-                <img src={acco} alt="lit" /> <h5>Équipements</h5>
+                <img src={acco} alt="lit" />{" "}
+                <h5>{langue ? "Équipements" : "Zékipman"}</h5>
               </div>{" "}
               <ul>
                 {formule.accomodation.split(";").map((element) => (
@@ -174,7 +179,8 @@ function Formule({ helmet, langue }) {
           {formule && formule.restrictions && (
             <div>
               <div>
-                <img src={rest} alt="cadenas" /> <h5>Restrictions</h5>
+                <img src={rest} alt="cadenas" />{" "}
+                <h5>{langue ? "Restrictions" : "Réstriksyon"}</h5>
               </div>{" "}
               <ul>
                 {formule.restrictions.split(";").map((element) => (
@@ -190,7 +196,7 @@ function Formule({ helmet, langue }) {
             <div>
               <div>
                 <img src={carte} alt="carte bancaire" />{" "}
-                <h5>Moyens de paiement</h5>
+                <h5>{langue ? "Moyens de paiement" : "Mwayin péman"}</h5>
               </div>{" "}
               <ul>
                 {formule.paiements.split(";").map((element) => (
@@ -205,8 +211,8 @@ function Formule({ helmet, langue }) {
           {formule && formule.langues && (
             <div>
               <div>
-                <img src={langue} alt="langues parlées" />{" "}
-                <h5>Langues parlées</h5>
+                <img src={monde} alt="langues parlées" />{" "}
+                <h5>{langue ? "Langues parlées" : "Langkozé"}</h5>
               </div>{" "}
               <ul>
                 {formule.langues.split(";").map((element) => (

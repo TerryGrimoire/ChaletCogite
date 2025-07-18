@@ -50,7 +50,7 @@ function Activites({ helmet, langue }) {
         <Hero number={2} langue={langue} />
         {activite && activite.length > 0 && activite[0].evenement ? (
           <section className="white agenda_main_container">
-            <h3>L'agenda du mois</h3>
+            <h3>{langue ? "L'agenda du mois" : "Lazinda lo mwa"}</h3>
             <div className="agenda_container">
               {activite
                 .filter(
@@ -82,7 +82,11 @@ function Activites({ helmet, langue }) {
         ) : null}
 
         <section className="boutique_article_main_container white">
-          <h3>Les activités autour du Chalet Cogite </h3>
+          <h3>
+            {langue
+              ? "Les activités autour du Chalet Cogite"
+              : "Kosa néna pou fé otour lo shalé"}
+          </h3>
           <div className="boutique_article_container">
             {activite
               .filter(

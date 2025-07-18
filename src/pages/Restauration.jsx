@@ -48,12 +48,11 @@ function Restauration({ helmet, langue }) {
       <main className="all_main">
         <Hero number={4} langue={langue} />
         <section className="boutique_produits_section white">
-          <h3>Kosa néna pou manjé</h3>
+          <h3>{langue ? "Au menu" : "Kosa néna pou manjé"}</h3>
           <p>
-            Une cuisine généreuse au feu de bois, mélange de cuisine locale,
-            familiale et de cuisine du monde. Pas un carry sans son rougail et
-            son brèdes lakour. C’est ce que vous mijote les marmites du Chalet
-            Cogite
+            {langue
+              ? "Une cuisine généreuse au feu de bois, mélange de cuisine locale, familiale et de cuisine du monde. Pas un carry sans son rougail et son brèdes lakour. C’est ce que vous mijote les marmites du Chalet Cogite"
+              : "In kwizinn jénérez o fé d-bwa, mélanz kwizinn lokal, famiyal é kwizinn lo monn. Pa in kari san son rogay é son brèd lakour. Sé sa lo Shalé Kojit i fé pou zot."}
           </p>
 
           <div className="resto_container">
@@ -89,7 +88,11 @@ function Restauration({ helmet, langue }) {
           </div>
         </section>
         <section className="boutique_article_main_container white">
-          <h3>Manger bien, manger sain</h3>
+          <h3>
+            {langue
+              ? "Manger bien, manger sain"
+              : "Alon manz bon nafer pou nout kor"}
+          </h3>
           <div className="boutique_article_container">
             {restauration
               .filter(

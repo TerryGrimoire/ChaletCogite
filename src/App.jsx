@@ -11,7 +11,8 @@ import Restauration from "./pages/Restauration";
 import Boutique from "./pages/Boutique";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
-import terre from "./assets/globe.png";
+import france from "./assets/france.png";
+import reunion from "./assets/reunion.png";
 
 import "./App.css";
 
@@ -63,7 +64,7 @@ function App() {
         type="button"
         onClick={() => setLangue(!langue)}
       >
-        <img src={terre} alt="icone planete terre" />{" "}
+        <img src={langue ? reunion : france} alt="icone planete terre" />{" "}
         <p>{!langue ? "FR" : "KR"}</p>
       </button>
       <Footer langue={langue} />

@@ -45,19 +45,28 @@ function Formules({ helmet, langue }) {
       <main className="all_main">
         <Hero number={1} langue={langue} />
         <section className="all_section formules_main_container white">
-          <h3>Différentes formules pour différentes envies</h3>
+          <h3>
+            {langue
+              ? "Différentes formules pour différentes envies"
+              : "Shak lanvi na son formul"}
+          </h3>
           <p>
-            Nous proposons plusieurs formules adaptées selon vos envies et votre
-            budget. Une nuit dans le chalet ou dans la cabane, en couple ou en
-            groupe, en formule collaborative ou formule plus classique, vous
-            avez le choix.
+            {langue
+              ? "Nous proposons plusieurs formules adaptées selon vos envies et votre budget. Une nuit dans le chalet ou dans la cabane, en couple ou en groupe, en formule collaborative ou formule plus classique, vous avez le choix."
+              : "Nou propoz bonpé formul adapté solon zot lanvi é zot budjé. In nwit dann shalé oubyin dan nout kabann, an koup ou an group, an formul kolaboratif ou an formul klasik, zot na lo shwa."}
           </p>
 
           <small>
             <ul>
-              <li>Tarif enfants à partir de 3 ans, jusqu'à 9 ans 40 €</li>
               <li>
-                Tarif Bébés séjour offert (0 à 2 ans) (2 bébés par groupe)
+                {langue
+                  ? "Tarif enfants à partir de 3 ans, jusqu'à 9 ans 40 €"
+                  : "tarif marmay a partir 3 zan ziska 9 an 40 €"}
+              </li>
+              <li>
+                {langue
+                  ? "Tarif Bébés séjour offert (0 à 2 ans) (2 bébés par groupe)"
+                  : "Tarif bébé ziska 2 an gratwi (2 bébé par group)"}
               </li>
             </ul>
           </small>
