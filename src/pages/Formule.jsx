@@ -91,17 +91,16 @@ function Formule({ helmet, langue }) {
             ))}
         </div>
 
-        <div className="formulebyId_carousel_container">
-          <Carousel
-            infiniteLoop
-            dynamicHeight
-            autoFocus
-            emulateTouch
-            showStatus={false}
-          >
-            {formule &&
-              formule.galerie &&
-              formule.galerie.split(";").map((el) => (
+        {formule && formule.galerie && formule.galerie !== "\n" ? (
+          <div className="formulebyId_carousel_container">
+            <Carousel
+              infiniteLoop
+              dynamicHeight
+              autoFocus
+              emulateTouch
+              showStatus={false}
+            >
+              {formule.galerie.split(";").map((el) => (
                 <div className="carousel_img_container">
                   <img
                     src={el}
@@ -110,8 +109,9 @@ function Formule({ helmet, langue }) {
                   />
                 </div>
               ))}
-          </Carousel>
-        </div>
+            </Carousel>
+          </div>
+        ) : null}
 
         <article className="details_formulebyId">
           {formule && formule.nourriture && (
