@@ -101,12 +101,12 @@ export default function Home({ helmet, langue }) {
             <p>
               {langue
                 ? "Le Chalet Cogite c’est notre chambre d’hôtes éco responsable et collaborative. Dans notre petit chalet autonome en électricité et en eau, faîtes l’expérience d’un tourisme durable au cœur d’un espace naturel sensible."
-                : "Le Shalé kojit sé nout shanb dot éko responsab é kolaboratif. Nout ti shalé lé otonom pou do lo ek kouran, ariv azot pou in lekspérians touristik durab dan in zoli lespas natirel sansib."}
+                : "Le Shalé Kojit sé nout jit dann milié la foré ousa i met ansanm. Nout ti kaz otonom ek dolo, lestrisité, vyin bat in karé dann inn joli ti kwin la foré Dimitile."}
             </p>{" "}
             <p>
               {langue
                 ? " Venez “CoGiter” avec nous, en participant à la vie du lieu ou simplement pour profiter de la fraîcheur des hauts et vous reposer. Cogiter c’est aussi réfléchir aux enjeux de la transition écologique via le partage de la tradition et du savoir vivre créole réunionnais."
-                : "Ariv azot pou kojit ek nou, zot i pé ni pou rann dann ron é viv aktivman ek nou ou jus parske zot la anvi ropozé dann lèr fré lé o. Kojité sé osi mèt la tèt dann bann zanjé la tranzisyon ékolojik sanm nout transmisyon nout bann tradisyon é nout kisanoulé, anou réyoné"}
+                : "Mont azot pou kojité, zot va giny repozé oubyin mèt la min ansanm. Vyin kas koko, kojité desu lekoloji réyoné, nout manyèr viv lontan, nout tradisyon, nout kisanoulé, anou réyoné."}
             </p>
             <Link to="/Chalet">
               <button type="button" className="button_style">
@@ -128,7 +128,7 @@ export default function Home({ helmet, langue }) {
         ))}
       </section>
       <section className="white home_first_carousel">
-        <h3>{langue ? "Découvrez notre gîte" : "Dékouv nout jit"}</h3>
+        <h3>{langue ? "Découvrez notre gîte" : "FOTO ISI AN O"}</h3>
         <div>
           <AliceCarousel
             mouseTracking
@@ -165,11 +165,11 @@ export default function Home({ helmet, langue }) {
         </div>
       </section>
       <section className="home_formules">
-        <h3>{langue ? "Nos formules" : "Nout formul"}</h3>
+        <h3>{langue ? "Nos formules" : "Kwa nou propoz"}</h3>
         <p>
           {langue
             ? "Nous proposons des formules différentes selon les envies et le nombre de personnes. Un peu plus que gîter nous vous invitons à CoGîter avec nous, à vivre l’expérience collaborative d’une nuit en gîte."
-            : "Nou bann formul lé diféran an fonksyon zot bann lanvi é la kantité domoun. Plis ke jité, nou invit azot kojit ek nou é viv in lekspérians kolaborativ din nuit an jit."}
+            : "Zot y pe shwazi kel séjour zot la anvi kan zot y vyin vwar anou."}
         </p>
         <section>
           {" "}
@@ -182,11 +182,11 @@ export default function Home({ helmet, langue }) {
             <p>
               {langue
                 ? "La formule Donn' la main (à partir de 6 personnes) vous offre une expérience conviviale et collaborative. En plus de votre hébergement en chambre, vous pourrez participer à la préparation du dîner et petit-déjeuner avec des ingrédients frais, locaux et de saison. Nous faisons tout ensemble, que ce soit la vaisselle ou le maintien de la propreté du gîte."
-                : "Nout formul donn la min (6 moun minimun) i donn azot in lekspérians kolaboratif é konvivyal. An plis de zot shanb, zot i giny donn la min pou fé kwi manjé ek nout bann prodwi fré, lokal é de sézon. Nou fé tout ansanm, la vésèl oubyin armèt lo jit prop."}
+                : "An formul donn la min (6 moun minimun) zot na la nwit an shanm, nou fé kwi manjé, nou mett prop, nou koup dobwa etc. Tout sak néna pou fé, nou fé ansanm. An partaj, an lamontraj, an lantouraj. "}
             </p>
             <Link to="/Formules">
               <button type="button" className="button_style">
-                {langue ? "Découvrir cette formule" : "Dekouv formul la"}
+                {langue ? "Découvrir cette formule" : "Klik terla pou konet"}
               </button>
             </Link>
           </div>
@@ -196,19 +196,19 @@ export default function Home({ helmet, langue }) {
             <p>
               {langue
                 ? "La formule Pied sous table , plus classique, est parfaite pour ceux qui cherchent à se détendre complètement et profiter d'un cadre unique en harmonie avec la nature. Elle inclut votre hébergement en chambre, ainsi que le dîner et petit déjeuner préparés avec des ingrédients frais, locaux et de saison."
-                : "Nout formul pyé sou tab, lé inpé plu klasik. Li lé parfé pou bann moun i rod ropozé, détann azot é profité dan in lanbians inik an larmoni ek la natir. Dodan ou rotrouv out léberjman an shanb, le manjé lo swar é le tidéjéné préparé ek bann zingrédyan fré, lokal é de sézon."}
+                : " La formul pyé sou tab, sé in formul klassik ousa zot y vyin manjé, dormir, détann azot é anprofité dan la fré lé o. "}
             </p>
             <Link to="/Formules">
               {" "}
               <button type="button" className="button_style">
-                {langue ? "Découvrir cette formule" : "Dekouv formul la"}
+                {langue ? "Découvrir cette formule" : "Klik terla pou konet"}
               </button>
             </Link>
           </div>
         </section>
       </section>
       <section className="home_aussi white">
-        <h3>{langue ? "Le gîte c'est aussi" : "Lo jit sé osi"}</h3>
+        <h3>{langue ? "Le gîte c'est aussi" : "Kan na pi na ankor"}</h3>
         <section>
           {aussiData.map((el) => (
             <div>
@@ -217,7 +217,7 @@ export default function Home({ helmet, langue }) {
                 <h4>{el.titre}</h4>
                 <p>{el.texte}</p>
                 <Link to={el.link}>
-                  {langue ? "En savoir plus" : "Plis zinformasyon"}
+                  {langue ? "En savoir plus" : "Klik terla pou konet"}
                 </Link>
               </article>
             </div>
@@ -225,11 +225,11 @@ export default function Home({ helmet, langue }) {
         </section>
       </section>
       <section className="home_trouver white">
-        <h3>{langue ? "Nous trouver" : "Artrouv anou"}</h3>
+        <h3>{langue ? "Nous trouver" : "Ousa nou lé ? "}</h3>
         <p>
           {langue
             ? "Le Chalet Cogite se trouve en plein cœur de l'empire marron au Dimitile. Accessible à pied par sentier ou en 4x4."
-            : "Le Shalé kojit lé an plin dan lanpir maron Dimitil. Li lé aksésib a pyé dann santyé oubyin an 4x4."}
+            : "Zot va trouv anou dann milyé lanpir maron Dimitile, i giny mont a pyé oubyin an 4x4 "}
         </p>
         <small>
           <a href="https://g.co/kgs/XVwEiCf" target="_blank" rel="noreferrer">

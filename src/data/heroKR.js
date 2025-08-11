@@ -1,11 +1,9 @@
 import chalet from "../assets/bannierechalet.jpg";
-import formule from "../assets/banniereformule.avif";
-import activite from "../assets/banniereactivite.avif";
+import formule from "../assets/banniereformule.jpg";
+import activite from "../assets/banniereactivite.jpg";
 import boutique from "../assets/banniereboutique.jpg";
-import contact from "../assets/banniereContact.png";
-import restauration from "../assets/banniereRestauration.avif";
-
-
+import contact from "../assets/bannierecontact.png";
+import restauration from "../assets/banniererestauration.jpg";
 
 const hero = [
   {
@@ -31,7 +29,7 @@ const hero = [
   {
     id: 4,
     img: restauration,
-    title: "Restorasyon",
+    title: "Manzé",
   },
   {
     id: 5,

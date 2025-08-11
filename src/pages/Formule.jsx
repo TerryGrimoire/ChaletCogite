@@ -73,7 +73,7 @@ function Formule({ helmet, langue }) {
         <h3>
           {langue
             ? "Plus de détails sur la formule "
-            : "Plis zinformasyon su lo formul"}
+            : "Plis zinformasyon su lo formul "}
           <span>{formule && formule.formules}</span>
         </h3>
         <article>

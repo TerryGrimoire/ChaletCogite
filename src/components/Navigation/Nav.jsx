@@ -39,7 +39,7 @@ function Nav({ setOpenBurger, langue }) {
       </Link>
       <Link to="/Restauration">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          {langue ? "Restauration" : "Restorasyon"}
+          {langue ? "Restauration" : "Manzé"}
         </button>
       </Link>
       <Link to="/Contact">

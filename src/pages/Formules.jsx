@@ -53,16 +53,11 @@ function Formules({ helmet, langue }) {
           <p>
             {langue
               ? "Nous proposons plusieurs formules adaptées selon vos envies et votre budget. Une nuit dans le chalet ou dans la cabane, en couple ou en groupe, en formule collaborative ou formule plus classique, vous avez le choix."
-              : "Nou propoz bonpé formul adapté solon zot lanvi é zot budjé. In nwit dann shalé oubyin dan nout kabann, an koup ou an group, an formul kolaboratif ou an formul klasik, zot na lo shwa."}
+              : "Nou propoz formul diféran solon zot lanvi, zot budjé. In nwit dann in shanm dann shalé oubyin dan nout kabann anlèr pièdbwa, ek out zézére ou an group, an formul i met ansanm ou an formul klasik, zot na lo shwa."}
           </p>
 
           <small>
             <ul>
-              <li>
-                {langue
-                  ? "Tarif enfants à partir de 3 ans, jusqu'à 9 ans 40 €"
-                  : "tarif marmay a partir 3 zan ziska 9 an 40 €"}
-              </li>
               <li>
                 {langue
                   ? "Tarif Bébés séjour offert (0 à 2 ans) (2 bébés par groupe)"
@@ -71,8 +66,7 @@ function Formules({ helmet, langue }) {
             </ul>
           </small>
           <div className="formules_container">
-            {formules &&
-              formules.length > 0 &&
+            {formules && formules.length > 0 ? (
               formules.map((element) => (
                 <Link to={`/Formules/${element.formules.replaceAll(" ", "_")}`}>
                   <div className="formules_tarifs">
@@ -81,7 +75,10 @@ function Formules({ helmet, langue }) {
                   <div className="veil" />
                   <img src={element.image} alt={element.formules} />
                 </Link>
-              ))}
+              ))
+            ) : (
+              <p>Chargement des formules</p>
+            )}
           </div>
         </section>
       </main>

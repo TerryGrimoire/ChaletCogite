@@ -9,27 +9,27 @@ const propositions = [
     titre: "KO-JITÉ",
     image: maison,
     texte:
-      "Nout jit lé konu pou son konsept Kojité, jité ansanm. Ek nout formul donn la min, sé inot vizyon du tourism shé labitan.",
+      "Domoun y koné isi an ho, pou nout formul donn la min. Terla y Kojite, y jite ansanm.",
   },
   {
     id: 2,
     titre: "KWIZINN LONTAN",
     image: lontan,
-    texte: "Nou kwizinn au feu d-bwa ek bann zingrédyan péi",
+    texte: "Nou fé kwi manjé fédbwa, lakour, péi sanm lamour.",
   },
   {
     id: 3,
-    titre: "TRANSMISYON POU LA ZENESS",
+    titre: "LAMONTRAZ",
     image: hobby,
     texte:
-      "Nou propoz bann zatélyé zistwar La Rényon, maloya, tizann, téat linprovizasyon, yoga etc. ",
+      "Terla y giny fé moring, fonnker, rakontaz zistwar ,maloya, téat linprovizasyon, yoga etc.",
   },
   {
     id: 4,
-    titre: "RESTOR NOUT BANN PYÉ-DBWA",
+    titre: "FORÉ SOBAT",
     image: jardin,
     texte:
-      "Nou lut kont bann zespès anvaisant de nout foré é nou arplant nout bann zespès andémik.",
+      "Nou tir bann plant y sort déor, sak y touf la foré, pou arplant nout plant péi andémik.",
   },
 ];
 

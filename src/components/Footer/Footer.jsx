@@ -81,9 +81,7 @@ function Footer({ langue }) {
         </div>
       </div>
       <div className="footer_avis">
-        <h3>
-          {langue ? "Nos clients témoignent" : "Kosa nout kliyan i pans de nou"}
-        </h3>
+        <h3>{langue ? "Nos clients témoignent" : "Kosa domoun i di"}</h3>
         <AliceCarousel
           disableDotsControls
           disableButtonsControls

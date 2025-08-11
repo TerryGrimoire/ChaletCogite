@@ -49,12 +49,12 @@ function Boutique({ helmet, langue }) {
         <Hero number={3} langue={langue} />
         <section className="boutique_produits_section white">
           <h3>
-            {langue ? "Découvrez nos produits" : "Dékouv nout bann prodwi"}
+            {langue ? "Découvrez nos produits" : "Nout bann prodwi lakour"}
           </h3>
           <p>
             {langue
               ? "Nos produits sont disponibles sur commande, en quantité limitée. Sur place ou en point relais dans les bas."
-              : "Nout bann prodwi lé disponib solman su komann, an kantité limité, i fo ni sur plas ou an pwin rolé dan lé ba."}
+              : "Nout bann prodwi lé disponib su komann, na pwin bonpé, zot pe trap sur plas ou byin nou pe trouv anou dan lé ba."}
           </p>
           <div className="boutique_produits_container">
             {boutique &&
@@ -78,11 +78,7 @@ function Boutique({ helmet, langue }) {
           </div>
         </section>
         <section className="boutique_article_main_container white">
-          <h3>
-            {langue
-              ? "A propos de notre boutique"
-              : "Kosa i fo konèt su nout boutik"}
-          </h3>
+          <h3>{langue ? "A propos de notre boutique" : "Boutik"}</h3>
           <div className="boutique_article_container">
             {boutique
               .filter(

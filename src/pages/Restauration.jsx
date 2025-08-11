@@ -54,7 +54,7 @@ function Restauration({ helmet, langue }) {
           <p>
             {langue
               ? "Une cuisine généreuse au feu de bois, mélange de cuisine locale, familiale et de cuisine du monde. Pas un carry sans son rougail et son brèdes lakour. C’est ce que vous mijote les marmites du Chalet Cogite"
-              : "In kwizinn jénérez o fé d-bwa, mélanz kwizinn lokal, famiyal é kwizinn lo monn. Pa in kari san son rogay é son brèd lakour. Sé sa lo Shalé Kojit i fé pou zot."}
+              : "Nout manjé lé mélanjé in bonpé kwizinn kréol ek inn ti gine kwizine lo ress le mond. Nou fé bon manjé fédbwa, terla ou trouvera pa in kari san son rougay é son brèd lakour. "}
           </p>
 
           <div className="resto_container">
@@ -93,7 +93,7 @@ function Restauration({ helmet, langue }) {
           <h3>
             {langue
               ? "Manger bien, manger sain"
-              : "Alon manz bon nafer pou nout kor"}
+              : "Bon manjé in tizann pou lo kor ek lo ker"}
           </h3>
           <div className="boutique_article_container">
             {restauration

@@ -12,7 +12,7 @@ function Navbar({ langue }) {
       <Link to="/Formules">{langue ? "Formules" : "Formul"}</Link>
       <Link to="/Activites">{langue ? "Activités" : "Zaktivité"}</Link>
       <Link to="/Boutique">{langue ? "Boutique" : "Boutik"}</Link>
-      <Link to="/Restauration">{langue ? "Restauration" : "Restorasyon"}</Link>
+      <Link to="/Restauration">{langue ? "Restauration" : "Manzé"}</Link>
       <Link to="/Contact">{langue ? "Contact" : "Kontakt"}</Link>
     </nav>
   );
