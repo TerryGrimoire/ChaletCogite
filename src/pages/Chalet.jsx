@@ -53,7 +53,7 @@ function Chalet({ helmet, langue }) {
           <article>
             <p>
               {langue
-                ? "Que vous veniez pour vous reconnecter à la nature, déguster de bons petits plats ou simplement vous offrir un moment de calme, Coralie et Quentin vous accueillent avec plaisir au Chalet CoGîte. Ici, simplicité rime avec convivialité, confort avec authenticité."
+                ? "Que vous veniez pour vous reconnecter à la nature, profiter d’un moment convivial, déguster de bons petits mangés ou simplement vous offrir un moment de calme, notre petit cocon est l'option idéale."
                 : "Zot i pe monté pou apresyé la natir, anprofité sanm kamarad, an famy, ranpli zot jabo ek in bon kari febwa sinonsa zis pou giny la trankilité, nout porte lé rouver. Terla y kass pa la tete, y fé sanm lo ker."}
             </p>
           </article>

@@ -55,16 +55,6 @@ function Formules({ helmet, langue }) {
               ? "Nous proposons plusieurs formules adaptées selon vos envies et votre budget. Une nuit dans le chalet ou dans la cabane, en couple ou en groupe, en formule collaborative ou formule plus classique, vous avez le choix."
               : "Nou propoz formul diféran solon zot lanvi, zot budjé. In nwit dann in shanm dann shalé oubyin dan nout kabann anlèr pièdbwa, ek out zézére ou an group, an formul i met ansanm ou an formul klasik, zot na lo shwa."}
           </p>
-
-          <small>
-            <ul>
-              <li>
-                {langue
-                  ? "Tarif Bébés séjour offert (0 à 2 ans) (2 bébés par groupe)"
-                  : "Tarif bébé ziska 2 an gratwi (2 bébé par group)"}
-              </li>
-            </ul>
-          </small>
           <div className="formules_container">
             {formules && formules.length > 0 ? (
               formules.map((element) => (
