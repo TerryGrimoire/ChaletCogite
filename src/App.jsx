@@ -12,8 +12,8 @@ import Boutique from "./pages/Boutique";
 import Contact from "./pages/Contact";
 import Mentions from "./pages/Mentions";
 import Erreur404 from "./pages/Error404";
-import france from "./assets/france.png";
-import reunion from "./assets/reunion.png";
+import france from "./assets/france2.png";
+import reunion from "./assets/reunion3.webp";
 
 import "./App.css";
 
