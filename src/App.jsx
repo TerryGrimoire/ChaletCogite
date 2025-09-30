@@ -24,7 +24,7 @@ function App() {
   };
 
   const [langue, setLangue] = useState(true);
-
+  const [bandeau, setBandeau] = useState(true);
   return (
     <BrowserRouter>
       <Header helmet={helmet} langue={langue} />
@@ -73,6 +73,33 @@ function App() {
         <img src={langue ? reunion : france} alt="icone planete terre" />{" "}
         <p>{!langue ? "FR" : "KR"}</p>
       </button>
+      {bandeau && (
+        <div className="bandeau">
+          <h2>Informations importantes</h2>
+
+          <p>
+            Ce site est à usage informatif et n'utilise donc pas de cookie. Nous
+            ne collectons aucune donnée personnelle. Pour en savoir plus,
+            consultez notre <a href="/mentions">politique de confidentialité</a>
+          </p>
+          <div>
+            <button
+              type="button"
+              className="button_style button_white_blue shad"
+              onClick={() => setBandeau(false)}
+            >
+              Tout accepter
+            </button>
+            <button
+              type="button"
+              className="button_style"
+              onClick={() => setBandeau(false)}
+            >
+              Tout refuser
+            </button>
+          </div>
+        </div>
+      )}
       <Footer langue={langue} />
     </BrowserRouter>
   );
